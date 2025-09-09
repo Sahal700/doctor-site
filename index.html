@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinikk</title>
+
+  <!-- Tailwind (CDN version, good for quick setups) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-[#2b1d0f] text-white">
+    <div class="ms-2 flex items-center py-4 px-6">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center font-bold">C</div>
+        <span class="text-2xl font-medium">COGNITIVE</span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-10 font-medium ms-20 text-sm">
+        <a href="#home" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Home</a>
+        <a href="#" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">About Us</a>
+        <a href="#" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Services</a>
+        <a href="#" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Pages</a>
+        <a href="#" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Blog</a>
+        <a href="#" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Contact Us</a>
+      </nav>
+
+      <!-- Appointment Button -->
+      <button class="hidden md:inline group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-orange-500 px-8 py-2 text-white font-semibold ms-auto me-4"><span class="relative z-10">Make Appointment</span><span class="absolute inset-0 overflow-hidden rounded-md"><span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none ms-auto">
+        <svg class="w-8 h-8" viewBox="0 0 24 24">
+          <path class="line top" d="M4 6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path class="line middle" d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path class="line bottom" d="M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      
+      <!-- <button id="appointmentBtn" class="hidden md:inline bg-gradient-to-r from-orange-500 to-orange-600 
+         hover:from-orange-600 hover:to-orange-700 
+         text-white px-8 py-4 rounded  ms-auto me-4
+         transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+        Make Appointment
+      </button> -->
+    </div>
+
+    <!-- Mobile Nav (hidden by default) -->
+    <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6 pb-4">
+      <nav class="flex flex-col font-medium">
+        <a href="#home" class="menu-item">Home</a>
+        <a href="#about" class="menu-item">About Us</a>
+        <a href="#services" class="menu-item">Services</a>
+        <a href="#pages" class="menu-item">Pages</a>
+        <a href="#blog" class="menu-item">Blog</a>
+        <a href="#contact" class="menu-item">Contact Us</a>
+        <button class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2">
+          Make Appointment
+        </button>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-8 lg:gap-12 pt-8 pb-0 md:pt-16 md:pb-0 lg:pt-20 lg:pb-0 px-4 sm:px-6 lg:px-8">
+      <!-- Left Content -->
+      <div class="space-y-6 lg:space-y-8">
+          <p class="animate-element text-xs sm:text-sm font-semibold text-gray-700 tracking-wide uppercase">
+              Dr. Andrew Smith
+          </p>
+          
+          <h1 class="animate-element text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+              The Importance of 
+              <span class="text-orange-500 block sm:inline">Mental Health</span> 
+              For a Better Life
+          </h1>
+          
+          <p class="animate-element text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. 
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.
+          </p>
+          
+          <div class="animate-element flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <a href="#" class="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-orange-600 transition-colors duration-300 text-center">
+                  Contact Us
+              </a>
+          </div>
+          
+          <div class="animate-element flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+              <!-- Small avatars -->
+              <div class="flex -space-x-2">
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" 
+                        class="w-10 h-10 rounded-full border-2 border-white shadow-md">
+                  <img src="https://randomuser.me/api/portraits/men/45.jpg" 
+                        class="w-10 h-10 rounded-full border-2 border-white shadow-md">
+                  <img src="https://randomuser.me/api/portraits/women/32.jpg" 
+                        class="w-10 h-10 rounded-full border-2 border-white shadow-md">
+                  <img src="https://randomuser.me/api/portraits/men/25.jpg" 
+                        class="w-10 h-10 rounded-full border-2 border-white shadow-md">
+              </div>
+              
+              <div class="text-sm text-gray-700">
+                  <div class="flex items-center space-x-1 mb-1">
+                      <span class="text-yellow-400">★★★★★</span>
+                  </div>
+                  <div>
+                      Over <span class="font-semibold text-orange-500">1K+</span> Happy Customers
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Right Image -->
+      <div class="animate-element order-first lg:order-last">
+          <div class="relative">
+              <img src="https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                    alt="Therapy session with Dr. Andrew Smith" 
+                    class="rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover">
+              
+              <!-- Floating card overlay -->
+              <div class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-xs">
+                  <div class="flex items-center space-x-3">
+                      <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                          <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                          </svg>
+                      </div>
+                      <div>
+                          <p class="font-semibold text-gray-900 text-sm">Certified</p>
+                          <p class="text-xs text-gray-500">Licensed Therapist</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+ <section id="booking-section" class="text-white py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+      
+      <div id="success-notification" class="hidden bg-white text-gray-900 p-4 rounded-md border-l-4 border-green-500 mb-6">
+        <div class="flex items-center space-x-3">
+          <svg class="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.89163 13.2687L9.16582 17.5427L18.7085 8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="font-medium">Thank you! Form submitted successfully.</span>
+        </div>
+      </div>
+
+      <form id="booking-form" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-end">
+        
+        <div class="space-y-2 lg:col-span-1">
+          <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-gray-600 focus:border-orange-500 focus:ring-0">
+        </div>
+
+        <div class="space-y-2 lg:col-span-1">
+          <label for="email" class="block text-sm font-medium text-gray-300">Email <span class="text-orange-500">*</span></label>
+          <input type="email" id="email" name="email" placeholder="youremail@domain.com" required class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-gray-600 focus:border-orange-500 focus:ring-0">
+        </div>
+
+        <div class="space-y-2 lg:col-span-1">
+          <label for="date" class="block text-sm font-medium text-gray-300">Date</label>
+          <input type="text" id="date" name="date" placeholder="mm-dd-yyyy" required onfocus="(this.type='date')" onblur="(this.type='text')" class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-gray-600 text-white focus:border-orange-500 focus:ring-0 [color-scheme:dark]">
+        </div>
+
+        <div class="space-y-2 lg:col-span-1">
+          <label for="consultation" class="block text-sm font-medium text-gray-300">Consultation</label>
+          <select id="consultation" name="consultation" required class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-gray-600 focus:border-orange-500 focus:ring-0">
+            <option value="" disabled selected class="bg-gray-800">Consultation</option>
+            <option value="individual" class="bg-gray-800">Individual Therapy</option>
+            <option value="couples" class="bg-gray-800">Couples Therapy</option>
+            <option value="family" class="bg-gray-800">Family Therapy</option>
+            <option value="group" class="bg-gray-800">Group Therapy</option>
+          </select>
+        </div>
+        
+        <div class="lg:col-span-1">
+          <button type="submit" class="w-full group relative h-12 overflow-hidden rounded-md bg-orange-500 px-8 py-2 text-white font-semibold">
+            <span class="relative z-10">Book Now</span>
+            <span class="absolute inset-0 overflow-hidden rounded-md">
+              <span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+            </span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="p-8 md:p-16 lg:p-24 bg-white">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
+            <div class="relative w-full lg:w-1/2 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-lg">
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-orange-200"></div>
+                    <div class="relative z-10 p-4 bg-white shadow-lg">
+                        <img src="https://templatekit.jegtheme.com/cognitive/wp-content/uploads/sites/304/2022/06/man-and-woman-during-the-psychological-counseling-indoors-e1656467097156-1024x620.jpg" alt="Group therapy session" class="w-full h-auto object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-gray-500 text-sm md:text-base lg:text-lg uppercase tracking-wider font-semibold">About Us</h2>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-2">
+                    We Help You Solve
+                    <br>
+                    <span class="text-orange-500">The Problems You Face</span>
+                </h3>
+                <p class="text-gray-600 mt-6 max-w-xl mx-auto lg:mx-0">
+                    Our mission is to provide compassionate and effective therapy services that empower individuals to overcome life's challenges and achieve mental well-being.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-2xl mx-auto lg:mx-0">
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Anxiety Therapy
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Family Therapy
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Bipolar Disorder
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Curing Addiction
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Depression Therapy
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Emergency Services
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Executive Coaching
+                    </div>
+                    <div class="flex items-center text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Stress Management
+                    </div>
+                </div>
+                <button class="mt-8 px-8 py-3 bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition duration-300">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="bg-white py-16 px-4 md:px-8 lg:px-16">
+    <!-- Header --> 
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-gray-500 uppercase tracking-widest text-sm font-semibold">Our Services</h2>
+      <h3 class="text-4xl md:text-5xl font-bold mt-2">
+        We Provide Best <span class="text-orange-500">Healthcare Services</span>
+      </h3>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        Compassionate, effective therapy services to empower your mental well-being.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  <!-- Card 1: Couple Counseling -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80">
+    <img src="https://www.talkspace.com/blog/wp-content/uploads/2020/09/premarital-counseling-what-is-definition-where-to-find_1200-800x500.png"
+         alt="Couple Counseling"
+         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/40 transition-opacity duration-700 ease-out group-hover:bg-black/50"></div>
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+      <h4 class="text-white text-2xl font-bold leading-tight transform transition-all duration-500 ease-out group-hover:-translate-y-6">
+        Couple Counseling
+      </h4>
+      <p class="mt-2 text-sm text-white opacity-0 transform translate-y-4 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+        Personalized sessions to improve communication and strengthen relationships.
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 2: Depression Counseling -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80">
+    <img src="https://www.thalieseneque.com/wp-content/uploads/2024/10/front-view-psychologist-patient_23-2148567324-1.jpg"
+         alt="Depression Counseling"
+         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/40 transition-opacity duration-700 ease-out group-hover:bg-black/50"></div>
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+      <h4 class="text-white text-2xl font-bold leading-tight transform transition-all duration-500 ease-out group-hover:-translate-y-6">
+        Depression Counseling
+      </h4>
+      <p class="mt-2 text-sm text-white opacity-0 transform translate-y-4 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+        Evidence-based therapy to manage and overcome depression effectively. Our experienced counselors provide personalized treatment plans.
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 3: Individual Therapy (Tall card) -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer md:row-span-2 h-[38rem] md:h-[42rem]">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm78k2JmBrKa2VFCIAp1aS1l96uSaxktWxxQ&s"
+         alt="Individual Therapy"
+         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/40 transition-opacity duration-700 ease-out group-hover:bg-black/50"></div>
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+      <h4 class="text-white text-2xl font-bold leading-tight transform transition-all duration-500 ease-out group-hover:-translate-y-6">
+        Individual Therapy
+      </h4>
+      <p class="mt-2 text-sm text-white opacity-0 transform translate-y-4 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+        One-on-one sessions tailored to personal growth and healing.
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 4: Therapy Session -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80">
+    <img src="https://www.thalieseneque.com/wp-content/uploads/2024/10/front-view-psychologist-patient_23-2148567324-1.jpg"
+         alt="Therapy Session"
+         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/40 transition-opacity duration-700 ease-out group-hover:bg-black/50"></div>
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+      <h4 class="text-white text-2xl font-bold leading-tight transform transition-all duration-500 ease-out group-hover:-translate-y-6">
+        Therapy Session
+      </h4>
+      <p class="mt-2 text-sm text-white opacity-0 transform translate-y-4 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+        Engaging and interactive group therapy sessions for various needs.
+      </p>
+    </div>
+  </div>
+
+  <!-- Card 5: Psychiatric Care -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEFsQgRwTjKMcaUfDS9sR7rLiQadMpgnKpg&s"
+         alt="Psychiatric Care"
+         class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110">
+    <div class="absolute inset-0 bg-black/40 transition-opacity duration-700 ease-out group-hover:bg-black/50"></div>
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+      <h4 class="text-white text-2xl font-bold leading-tight transform transition-all duration-500 ease-out group-hover:-translate-y-6">
+        Psychiatric Care
+      </h4>
+      <p class="mt-2 text-sm text-white opacity-0 transform translate-y-4 transition-all duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+        Professional psychiatric evaluation and treatment plans for mental health conditions.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+
+
+  <footer class="bg-neutral-800 text-gray-400 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white text-xl font-medium mb-8">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Services</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Team</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Center Logo and Description -->
+                <div class="text-center">
+                    <div class="flex items-center justify-center mb-8">
+                        <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
+                            <!-- Brain icon -->
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">COGNITIVE</h2>
+                    </div>
+                    <p class="text-gray-500 mb-10 leading-relaxed max-w-sm mx-auto text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                        luctus nec ullamcorper mattis, pulvinar dapibus.
+                    </p>
+                    
+                    <!-- Contact Information -->
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-center text-gray-500 text-sm">
+                            <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Jl. Raya Puputan No. 142, Denpasar</span>
+                        </div>
+                        <div class="flex items-center justify-center text-gray-500 text-sm">
+                            <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>(+62) 81 2345 6789</span>
+                        </div>
+                        <div class="flex items-center justify-center text-gray-500 text-sm">
+                            <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>cognitive@domain.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Pages -->
+                <div class="text-right">
+                    <h3 class="text-white text-xl font-medium mb-8">Other Pages</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-700 mt-16 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs">
+                    <p>Psychology, Therapy & Counseling Template Kit by Jegtheme</p>
+                    <p class="mt-2 md:mt-0">Copyright © 2022. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+  <!-- GSAP (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
