@@ -3,20 +3,26 @@ const mobileMenu = document.getElementById('mobile-menu');
 const menuLinks = document.querySelectorAll('#mobile-menu .menu-item');
 
 menuBtn.addEventListener('click', () => {
-  // Hamburger animation
   menuBtn.classList.toggle('active');
-
-  // Mobile menu animation
   mobileMenu.classList.toggle('open');
 });
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
+    // Close menu immediately
     menuBtn.classList.remove('active');
     mobileMenu.classList.remove('open');
+    
+    // Force reset positioning after animation completes
+    setTimeout(() => {
+      // Reset any accumulated transforms
+      menuLinks.forEach(item => {
+        item.style.transform = '';
+        item.style.left = '0';
+      });
+    }, 400);
   });
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // animate the home page text and image section -----------------------------------------------------------------------------
@@ -134,6 +140,32 @@ gsap.to(".tile-group", {
   }
 });
 
+// in op setion
+let opTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".timeline-section-1",
+        start: "top 85%"
+    }
+});
+
+opTl.to(".timeline-1-1", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  })
+    .to(".timeline-1-2", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  }, "-=0.6")
+
+gsap.set(".tile-group-op", { opacity: 0, scale: 0.8, y: 50 });
+
+gsap.to(".tile-group-op", {
+  opacity: 1,
+  scale: 1,
+  y: 0,
+  duration: 0.8,
+  ease: "back.out(1.7)",
+  stagger: 0.15,  // stagger between children
+  scrollTrigger: {
+    trigger: ".tile-parent-op",   // parent triggers the whole stagger
+    start: "top 70%",
+  }
+});
+
 // ---------------------------------------------------------------------------------------------------------------------
 document.addEventListener('DOMContentLoaded', function() {
     // Get references to the form and the new notification element
@@ -160,3 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function openLocation(link) {
+    window.open(link, '_blank');
+}

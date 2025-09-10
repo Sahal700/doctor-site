@@ -27,14 +27,16 @@ html {
 
 /* Mobile menu container animation */
 .mobile-menu {
-  max-height: 0;                /* fully collapsed */
+  max-height: 0;
   overflow: hidden;
   opacity: 0;
   transform: scaleY(0.95);
   transform-origin: top;
   transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  position: relative; /* ADD THIS */
+  width: 100%; /* ADD THIS */
+  left: 0; /* ADD THIS */
 }
-
 /* Mobile menu open state */
 .mobile-menu.open {
   max-height: 1000px;           /* large enough to fit all items */
@@ -45,15 +47,18 @@ html {
 /* Mobile menu items */
 .menu-item {
   white-space: nowrap;
-  display: block;               /* fixes alignment issue */
-  transform: translateX(-20px); /* slightly more for better effect */
+  display: block;
+  transform: translateX(-20px);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
-  text-decoration: none;        /* remove underline */
+  text-decoration: none;
   color: inherit;
-  padding: 0.75rem 0;          /* consistent padding */
-  width: 100%;                 /* ensure full width */
-}
+  padding: 0.75rem 0;
+  width: 100%;
+  position: relative; /* ADD THIS */
+  left: 0; /* ADD THIS */
+  transform-origin: left center; /* ADD THIS */
+} 
 
 /* Hover effect for menu items */
 .menu-item:hover {
@@ -63,8 +68,15 @@ html {
 
 /* Slide-in when menu opens - ensures perfect alignment */
 .mobile-menu.open .menu-item {
-  transform: translateX(0px);   /* explicitly set to 0px */
+  transform: translateX(0) translateZ(0); /* ADD translateZ(0) for GPU acceleration */
   opacity: 1;
+  left: 0; /* ENSURE THIS */
+}
+
+.mobile-menu:not(.open) .menu-item {
+  transform: translateX(-20px) translateZ(0);
+  opacity: 0;
+  left: 0;
 }
 
 /* Stagger animation for items */
@@ -80,8 +92,11 @@ html {
 .mobile-menu nav {
   display: flex;
   flex-direction: column;
-  gap: 0;                      /* remove gap, use padding instead */
+  gap: 0;
   padding: 0;
+  width: 100%;
+  position: relative; /* ADD THIS */
+  left: 0; /* ADD THIS */
 }
 
 /* Additional fix: ensure nav container has no extra margins */
