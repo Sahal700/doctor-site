@@ -397,24 +397,11 @@
 
 
 
-  <footer id="contact" class="bg-neutral-800 text-gray-400 py-20">
+  <footer id="contact" class="bg-neutral-800 text-gray-400 py-8 md:py-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 
-                <!-- Quick Links -->
-                <div>
-                    <h3 class="text-white text-xl font-medium mb-8">Quick Links</h3>
-                    <ul class="space-y-4">
-                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Home</a></li>
-                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Services</a></li>
-                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Team</a></li>
-                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Pricing</a></li>
-                    </ul>
-                </div>
-
-                <!-- Center Logo and Description -->
-                <div class="md:text-center">
+                <div class="md:hidden md:text-center">
                     <div class="flex items-center md:justify-center mb-8">
                         <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
                             <!-- Brain icon -->
@@ -424,7 +411,59 @@
                         </div>
                         <h2 class="text-xl font-bold text-white">COGNITIVE</h2>
                     </div>
-                    <p class="text-gray-500 mb-10 leading-relaxed max-w-sm mx-auto text-sm">
+                    <p class="text-gray-500 mb-10 leading-relaxed max-w-sm md:mx-auto text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
+                        luctus nec ullamcorper mattis, pulvinar dapibus.
+                    </p>
+                    
+                    <!-- Contact Information -->
+                    <div class="space-y-3">
+                        <div class="flex items-center md:justify-center text-gray-500 text-sm">
+                            <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Jl. Raya Puputan No. 142, Denpasar</span>
+                        </div>
+                        <div class="flex items-center md:justify-center text-gray-500 text-sm">
+                            <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <span>(+62) 81 2345 6789</span>
+                        </div>
+                        <div class="flex items-center md:justify-center text-gray-500 text-sm">
+                            <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <span>cognitive@domain.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white text-xl font-medium mb-4 md:mb-8">Quick Links</h3>
+                    <ul class="space-y-2 md:space-y-4">
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Home</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Services</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Team</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Center Logo and Description -->
+                <div class="hidden md:inline md:text-center">
+                    <div class="flex items-center md:justify-center mb-8">
+                        <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
+                            <!-- Brain icon -->
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-white">COGNITIVE</h2>
+                    </div>
+                    <p class="text-gray-500 mb-10 leading-relaxed max-w-sm md:mx-auto text-sm">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
                         luctus nec ullamcorper mattis, pulvinar dapibus.
                     </p>
@@ -454,7 +493,7 @@
                 </div>
 
                 <!-- Other Pages -->
-                <div class="md:text-right">
+                <div class="hidden md:inline md:text-right">
                     <h3 class="text-white text-xl font-medium mb-8">Other Pages</h3>
                     <ul class="space-y-4">
                         <li><a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">FAQ</a></li>
