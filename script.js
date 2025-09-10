@@ -9,15 +9,6 @@ menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
 });
 
-// Add this before your animations
-ScrollTrigger.config({
-  autoRefreshEvents: "visibilitychange,DOMContentLoaded,load",
-  ignoreMobileResize: true
-});
-
-// Enable touch scrolling
-ScrollTrigger.normalizeScroll(true);
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // animate the home page text and image section -----------------------------------------------------------------------------
