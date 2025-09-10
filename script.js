@@ -1,5 +1,6 @@
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
+const menuLinks = document.querySelectorAll('#mobile-menu .menu-item');
 
 menuBtn.addEventListener('click', () => {
   // Hamburger animation
@@ -7,6 +8,13 @@ menuBtn.addEventListener('click', () => {
 
   // Mobile menu animation
   mobileMenu.classList.toggle('open');
+});
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuBtn.classList.remove('active');
+    mobileMenu.classList.remove('open');
+  });
 });
 
 
@@ -21,7 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
         opacity: 1,
         ease: "power3.out",
         stagger: 0.2
-    });
+    })
+    .to(".animate-hero-image", {
+        duration: 1,
+        y: 0,
+        opacity: 1,
+        ease: "power3.out",
+    },0.3);
 
     // Add a subtle floating animation to the image card overlay
     gsap.timeline({ repeat: -1 })
@@ -56,7 +70,7 @@ gsap.to(".fade-in", {
     duration: 1,
     scrollTrigger: {
                 trigger: ".fade-in",
-                start: "top 85%",
+                start: "top 80%",
             }
 });
 
