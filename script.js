@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".fade-in", {
     opacity: 1,
