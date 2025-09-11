@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  section, .section, [id] {
+    scroll-margin-top: 280px /* Larger offset for mobile */
+  }
+}
+
 .line {
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform-origin: center;
@@ -55,16 +61,9 @@ html {
   color: inherit;
   padding: 0.75rem 0;
   width: 100%;
-  position: relative; /* ADD THIS */
-  left: 0; /* ADD THIS */
-  transform-origin: left center; /* ADD THIS */
 } 
 
-/* Hover effect for menu items */
-.menu-item:hover {
-  color: #fb923c;              /* orange-400 */
-  transition: color 0.3s ease;
-}
+
 
 /* Slide-in when menu opens - ensures perfect alignment */
 .mobile-menu.open .menu-item {

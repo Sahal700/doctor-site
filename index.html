@@ -46,7 +46,7 @@
       </nav>
 
       <!-- Appointment Button -->
-      <button onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' }) " class="hidden md:inline group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-orange-500 px-8 py-2 text-white font-semibold ms-auto me-4"><span class="relative z-10">Make Appointment</span><span class="absolute inset-0 overflow-hidden rounded-md"><span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
+      <button onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' })" class="hidden md:inline group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-orange-500 px-8 py-2 text-white font-semibold ms-auto me-4"><span class="relative z-10">Make Appointment</span><span class="absolute inset-0 overflow-hidden rounded-md"><span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
 
       <!-- Mobile Menu Button -->
       <button id="menu-btn" class="md:hidden focus:outline-none ms-auto">
@@ -67,14 +67,14 @@
     </div>
 
     <!-- Mobile Nav (hidden by default) -->
-    <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6 pb-4">
+    <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6">
       <nav class="flex flex-col font-medium">
         <a href="#home" class="menu-item">Home</a>
         <a href="#about" class="menu-item">About</a>
         <a href="#services" class="menu-item">Services</a>
         <a href="#op" class="menu-item">OP Schedule</a>
         <a href="#contact" class="menu-item">Contact</a>
-        <button class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2">
+        <button onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' }) " class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2 mb-4">
           Make Appointment
         </button>
       </nav>

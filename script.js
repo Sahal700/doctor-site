@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     // Hover animations for interactive elements
-    document.querySelectorAll('a, button').forEach(element => {
+    document.querySelectorAll('.a-anime, .button-anime').forEach(element => {
         element.addEventListener('mouseenter', () => {
             gsap.to(element, {duration: 0.3, scale: 1.05, ease: "power2.out"});
         });
