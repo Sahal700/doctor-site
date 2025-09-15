@@ -1,129 +1,141 @@
-const menuBtn = document.getElementById('menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const menuLinks = document.querySelectorAll('#mobile-menu .menu-item');
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const menuLinks = document.querySelectorAll("#mobile-menu .menu-item");
 
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.toggle('active');
-  mobileMenu.classList.toggle('open');
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  mobileMenu.classList.toggle("open");
 });
 
-menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
     // Close menu immediately
-    menuBtn.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    
+    menuBtn.classList.remove("active");
+    mobileMenu.classList.remove("open");
+
     // Force reset positioning after animation completes
     setTimeout(() => {
       // Reset any accumulated transforms
-      menuLinks.forEach(item => {
-        item.style.transform = '';
-        item.style.left = '0';
+      menuLinks.forEach((item) => {
+        item.style.transform = "";
+        item.style.left = "0";
       });
     }, 400);
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    // animate the home page text and image section -----------------------------------------------------------------------------
-    const tl = gsap.timeline();
+document.addEventListener("DOMContentLoaded", function () {
+  // animate the home page text and image section -----------------------------------------------------------------------------
+  const tl = gsap.timeline();
 
-    // Animate elements from bottom with stagger effect
-    tl.to(".animate-element", {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        ease: "power3.out",
-        stagger: 0.2
+  // Animate elements from bottom with stagger effect
+  tl.to(".animate-element", {
+    duration: 1,
+    y: 0,
+    opacity: 1,
+    ease: "power3.out",
+    stagger: 0.2,
+  }).to(
+    ".animate-hero-image",
+    {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      ease: "power3.out",
+    },
+    0.3
+  );
+
+  // Add a subtle floating animation to the image card overlay
+  gsap
+    .timeline({ repeat: -1 })
+    .to(".floating-animation", {
+      duration: 2,
+      y: -10,
+      ease: "sine.out",
     })
-    .to(".animate-hero-image", {
-        duration: 1,
-        y: 0,
-        opacity: 1,
-        ease: "power3.out",
-    },0.3);
-
-    // Add a subtle floating animation to the image card overlay
-    gsap.timeline({ repeat: -1 })
-        .to(".floating-animation", {
-            duration: 2,
-            y: -10,
-            ease: "sine.out"
-        })
-        .to(".floating-animation", {
-            duration: 2.5,
-            y: 0,
-            ease: "sine.in"
-        });
-
-    // Hover animations for interactive elements
-    document.querySelectorAll('.a-anime, .button-anime').forEach(element => {
-        element.addEventListener('mouseenter', () => {
-            gsap.to(element, {duration: 0.3, scale: 1.05, ease: "power2.out"});
-        });
-        
-        element.addEventListener('mouseleave', () => {
-            gsap.to(element, {duration: 0.3, scale: 1, ease: "power2.out"});
-        });
+    .to(".floating-animation", {
+      duration: 2.5,
+      y: 0,
+      ease: "sine.in",
     });
+
+  // Hover animations for interactive elements
+  document.querySelectorAll(".a-anime, .button-anime").forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      gsap.to(element, { duration: 0.3, scale: 1.05, ease: "power2.out" });
+    });
+
+    element.addEventListener("mouseleave", () => {
+      gsap.to(element, { duration: 0.3, scale: 1, ease: "power2.out" });
+    });
+  });
 });
 
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".fade-in", {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    scrollTrigger: {
-                trigger: ".fade-in",
-                start: "top 80%",
-            }
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".fade-in",
+    start: "top 80%",
+  },
 });
 
 gsap.to(".slide-left", {
-    opacity: 1,
-    x: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".slide-left",
-        start: "top 85%",
-    }
+  opacity: 1,
+  x: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".slide-left",
+    start: "top 85%",
+  },
 });
 
 gsap.to(".scale-up", {
-    opacity: 1,
-    scale: 1,
-    duration: 1.2,
-    ease: "back.out(1.5)",
-    scrollTrigger: {
-        trigger: ".scale-up",
-        start: "top 80%"
-    }
+  opacity: 1,
+  scale: 1,
+  duration: 1.2,
+  ease: "back.out(1.5)",
+  scrollTrigger: {
+    trigger: ".scale-up",
+    start: "top 80%",
+  },
 });
 
 // in about us tick marks
 gsap.to(".stagger-item", {
-    opacity: 1,
-    x: 0,
-    duration: 0.5,
-    stagger: 0.1,
-    scrollTrigger: {
-        trigger: ".stagger-item",
-    }
+  opacity: 1,
+  x: 0,
+  duration: 0.5,
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: ".stagger-item",
+  },
 });
 
 // in our service
 let serviceTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".timeline-section",
-        start: "top 85%"
-    }
+  scrollTrigger: {
+    trigger: ".timeline-section",
+    start: "top 85%",
+  },
 });
 
-serviceTl.to(".timeline-1", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  })
-    .to(".timeline-2", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  }, "-=0.6")
-    .to(".timeline-3", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  }, "-=0.6");
-
+serviceTl
+  .to(".timeline-1", { opacity: 1, scale: 1, duration: 1, ease: "power3.out" })
+  .to(
+    ".timeline-2",
+    { opacity: 1, scale: 1, duration: 1, ease: "power3.out" },
+    "-=0.6"
+  )
+  .to(
+    ".timeline-3",
+    { opacity: 1, scale: 1, duration: 1, ease: "power3.out" },
+    "-=0.6"
+  );
 
 gsap.set(".tile-group", { opacity: 0, scale: 0.8, y: 50 });
 
@@ -135,21 +147,31 @@ gsap.to(".tile-group", {
   stagger: 0.15,
   ease: "back.out(1.7)",
   scrollTrigger: {
-    trigger: ".tile-parent",   // your parent div
-    start: "top 70%"
-  }
+    trigger: ".tile-parent", // your parent div
+    start: "top 70%",
+  },
 });
 
 // in op setion
 let opTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".timeline-section-1",
-        start: "top 85%"
-    }
+  scrollTrigger: {
+    trigger: ".timeline-section-1",
+    start: "top 85%",
+  },
 });
 
-opTl.to(".timeline-1-1", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  })
-    .to(".timeline-1-2", { opacity: 1, scale: 1, duration: 1, ease: "power3.out"  }, "-=0.6")
+opTl
+  .to(".timeline-1-1", {
+    opacity: 1,
+    scale: 1,
+    duration: 1,
+    ease: "power3.out",
+  })
+  .to(
+    ".timeline-1-2",
+    { opacity: 1, scale: 1, duration: 1, ease: "power3.out" },
+    "-=0.6"
+  );
 
 gsap.set(".tile-group-op", { opacity: 0, scale: 0.8, y: 50 });
 
@@ -159,39 +181,62 @@ gsap.to(".tile-group-op", {
   y: 0,
   duration: 0.8,
   ease: "back.out(1.7)",
-  stagger: 0.15,  // stagger between children
+  stagger: 0.15, // stagger between children
   scrollTrigger: {
-    trigger: ".tile-parent-op",   // parent triggers the whole stagger
+    trigger: ".tile-parent-op", // parent triggers the whole stagger
     start: "top 70%",
-  }
+  },
 });
 
 // ---------------------------------------------------------------------------------------------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-    // Get references to the form and the new notification element
-    const bookingForm = document.getElementById('booking-form');
-    const successNotification = document.getElementById('success-notification');
-  
-    // Listen for the form's 'submit' event
-    bookingForm.addEventListener('submit', function(event) {
-      // Prevent the page from reloading
-      event.preventDefault();
-  
-      // --- Show the notification ---
-      // We just remove the 'hidden' class to make it appear instantly
-      successNotification.classList.remove('hidden');
-  
-      // --- Hide the notification after 5 seconds ---
-      setTimeout(() => {
-        // Add the 'hidden' class back to make it disappear
-        successNotification.classList.add('hidden');
-      }, 5000); // 5000 milliseconds = 5 seconds
-  
-      // Reset the form fields
-      bookingForm.reset();
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const BUSINESS_WHATSAPP_NUMBER = "9895037450";
+  // Get references to the form and the new notification element
+  const bookingForm = document.getElementById("booking-form");
+  const successNotification = document.getElementById("success-notification");
+
+  // Listen for the form's 'submit' event
+  bookingForm.addEventListener("submit", function (event) {
+    // Prevent the page from reloading
+    event.preventDefault();
+
+    const formData = new FormData(bookingForm);
+    const name = formData.get("name").trim();
+    const phone = formData.get("phone").trim();
+
+    if (!name || !phone) {
+      alert("Please fill in all fields");
+      return;
+    }
+
+    const message = `Hi! I would like to book a session.
+                
+Name: ${name}
+WhatsApp Number: ${phone}
+                
+Please confirm my booking. Thank you!`;
+
+    const encodedMessage = encodeURIComponent(message);
+
+    const whatsappURL = `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+    window.open(whatsappURL, "_blank");
+
+    // --- Show the notification ---
+    // We just remove the 'hidden' class to make it appear instantly
+    successNotification.classList.remove("hidden");
+
+    // --- Hide the notification after 5 seconds ---
+    setTimeout(() => {
+      // Add the 'hidden' class back to make it disappear
+      successNotification.classList.add("hidden");
+    }, 5000); // 5000 milliseconds = 5 seconds
+
+    // Reset the form fields
+    bookingForm.reset();
+  });
 });
 
 function openLocation(link) {
-    window.open(link, '_blank');
+  window.open(link, "_blank");
 }
