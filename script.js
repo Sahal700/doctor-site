@@ -190,7 +190,7 @@ gsap.to(".tile-group-op", {
 
 // ---------------------------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  const BUSINESS_WHATSAPP_NUMBER = "9895037450";
+  const BUSINESS_WHATSAPP_NUMBER = "+918826752502";
   // Get references to the form and the new notification element
   const bookingForm = document.getElementById("booking-form");
   const successNotification = document.getElementById("success-notification");
@@ -202,9 +202,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const formData = new FormData(bookingForm);
     const name = formData.get("name").trim();
-    const phone = formData.get("phone").trim();
 
-    if (!name || !phone) {
+    if (!name) {
       alert("Please fill in all fields");
       return;
     }
@@ -212,7 +211,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = `Hi! I would like to book a session.
                 
 Name: ${name}
-WhatsApp Number: ${phone}
                 
 Please confirm my booking. Thank you!`;
 
