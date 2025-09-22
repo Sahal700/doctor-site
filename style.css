@@ -8,13 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   section,
   .section,
   [id] {
-    scroll-margin-top: 280px; /* Larger offset for mobile */
+    scroll-margin-top: 280px; 
   }
-}
+} */
 
 .line {
   transition: transform 0.3s ease, opacity 0.3s ease;

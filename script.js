@@ -24,6 +24,21 @@ menuLinks.forEach((link) => {
   });
 });
 
+function mobileScrollToId(event, id) {
+
+  // Prevent default anchor jump
+  if (event) event.preventDefault();
+
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  const offset = 280;
+  const target = el.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // animate the home page text and image section -----------------------------------------------------------------------------
   const tl = gsap.timeline();

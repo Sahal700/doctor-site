@@ -129,13 +129,13 @@
       <!-- Mobile Nav (hidden by default) -->
       <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6">
         <nav class="flex flex-col font-medium">
-          <a href="#home" class="menu-item">Home</a>
-          <a href="#about" class="menu-item">About</a>
-          <a href="#services" class="menu-item">Services</a>
-          <a href="#op" class="menu-item">OP Schedule</a>
-          <a href="#contact" class="menu-item">Contact</a>
+          <a href="#home" onclick="mobileScrollToId(event,'home')" class="menu-item">Home</a>
+          <a href="#about" onclick="mobileScrollToId(event,'about')" class="menu-item">About</a>
+          <a href="#services" onclick="mobileScrollToId(event,'services')" class="menu-item">Services</a>
+          <a href="#op" onclick="mobileScrollToId(event,'op')" class="menu-item">OP Schedule</a>
+          <a href="#contact" onclick="mobileScrollToId(event,'contact')" class="menu-item">Contact</a>
           <button
-            onclick="document.getElementById('booking-section').scrollIntoView({ behavior: 'smooth' }) "
+            onclick="mobileScrollToId(event,'booking-section') "
             class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2 mb-4"
           >
             Make Appointment
@@ -299,7 +299,7 @@
                 name="name"
                 placeholder="Your Name"
                 required
-                class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-gray-600 focus:border-orange-500 focus:ring-0"
+                class="w-full px-0 py-3 bg-transparent border-0 border-b-2 border-gray-600 focus:ring-offset-0 focus:outline-none"
               />
             </div>
 
@@ -1032,30 +1032,30 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#services"
                   class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
                   >Services</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#op"
                   class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Team</a
+                  >OP schedule</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#booking-section"
                   class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Pricing</a
+                  >Booking</a
                 >
               </li>
             </ul>
@@ -1140,34 +1140,6 @@
                 <a
                   href="#"
                   class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >FAQ</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Blog</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
                   >Terms & Conditions</a
                 >
               </li>
@@ -1180,8 +1152,8 @@
           <div
             class="flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs"
           >
-            <p>Psychology, Therapy & Counseling Template Kit by Jegtheme</p>
-            <p class="mt-2 md:mt-0">Copyright © 2022. All rights reserved.</p>
+            
+            <p class="mt-2 md:mt-0">Copyright © 2025. All rights reserved.</p>
           </div>
         </div>
       </div>
