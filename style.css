@@ -8,13 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
 input:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px white inset !important; 
-  -webkit-text-fill-color: #000 !important; 
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #000 !important;
   transition: background-color 9999s ease-in-out 0s;
 }
-
 
 .line {
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -41,9 +39,9 @@ input:-webkit-autofill {
   transform: scaleY(0.95);
   transform-origin: top;
   transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
-  position: relative; /* ADD THIS */
-  width: 100%; /* ADD THIS */
-  left: 0; /* ADD THIS */
+  position: relative;
+  width: 100%;
+  left: 0;
 }
 /* Mobile menu open state */
 .mobile-menu.open {

@@ -75,6 +75,19 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "sine.in",
     });
 
+  gsap
+    .timeline({ repeat: -1 })
+    .to(".floating-animation-1", {
+      duration: 2,
+      y: 10,
+      ease: "sine.out",
+    })
+    .to(".floating-animation-1", {
+      duration: 2.5,
+      y: 0,
+      ease: "sine.in",
+    });
+
   // Hover animations for interactive elements
   document.querySelectorAll(".a-anime, .button-anime").forEach((element) => {
     element.addEventListener("mouseenter", () => {
@@ -202,6 +215,7 @@ gsap.to(".tile-group-op", {
     start: "top 70%",
   },
 });
+
 
 // ---------------------------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
