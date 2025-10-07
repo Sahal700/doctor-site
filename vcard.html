@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Abdu Salam OK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* A little custom style for the Instagram gradient */
+      .bg-instagram {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center py-8 px-4">
+    <div
+      class="max-w-md mx-auto bg-white rounded-2xl shadow-xl overflow-hidden"
+    >
+      <div class="flex justify-end items-center p-4 gap-4">
+        <button
+          id="shareButton"
+          class="text-gray-600 hover:text-orange-500"
+          title="Share"
+        >
+          <i class="fas fa-share-alt text-xl"></i>
+        </button>
+        <button
+          id="qrButton"
+          class="text-gray-600 hover:text-orange-500"
+          title="Show QR Code"
+        >
+          <i class="fas fa-qrcode text-xl"></i>
+        </button>
+      </div>
+
+      <div class="relative flex flex-col items-center px-6">
+        <div class="text-center mt-8 mb-6">
+          <h1 class="pb-2">
+            <span class="text-orange-500 text-5xl font-bold">Dr Salam’s</span
+            ><br />
+            <span class="text-gray-500 text-2xl font-semibold">
+              Psychiatry Centre</span
+            >
+          </h1>
+        </div>
+
+        <div class="w-32 h-32 rounded-full border-4 border-white shadow-lg">
+          <img
+            class="w-full rounded-full"
+            src="./images/doctor.jpg"
+            alt="Dr. Sabin Bangalath"
+          />
+        </div>
+        <h2 class="text-2xl font-bold text-gray-900 mt-4">Dr. Abdu Salam Ok</h2>
+        <p class="text-gray-600">(MBBS, MD, PSY)</p>
+        <p class="text-orange-600 font-semibold mt-1">Psychiatrist</p>
+        <div class="text-xs text-gray-500 mt-2 text-center px-4">
+          <p>
+            Almas Hospital, Kottakkal | MBH Hospital, Malappuram | MIMHAR ,
+            Malappuram
+          </p>
+          <p class="pt-2">
+            <span class="font-bold">Branch:</span> 24V4+V8 Koottilangadi,
+            Kerala, 676506
+          </p>
+        </div>
+
+        <button
+          id="saveContactBtn"
+          class="bg-orange-500 hover:bg-orange-600 text-white font-semibold w-full py-3 mt-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2"
+        >
+          <i class="fas fa-download"></i>
+          Save Contact
+        </button>
+      </div>
+
+      <div class="grid grid-cols-4 gap-4 p-6 text-center">
+        <a
+          href="tel:+918826752502"
+          class="flex flex-col items-center text-gray-600 hover:text-orange-500 transition-colors"
+        >
+          <div
+            class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center text-orange-500 text-xl"
+          >
+            <i class="fas fa-phone"></i>
+          </div>
+          <span class="text-sm mt-2">Call</span>
+        </a>
+        <a
+          href="https://www.google.com/maps/place/Dr+SALAM'S+PSYCHIATRY+CENTRE/@11.0446875,76.1032437,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba635b226dc0815:0x9745ef9f262fd4b3!8m2!3d11.0446875!4d76.1058186!16s%2Fg%2F11nxqyvmgx?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          class="flex flex-col items-center text-gray-600 hover:text-orange-500 transition-colors"
+        >
+          <div
+            class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center text-orange-500 text-xl"
+          >
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <span class="text-sm mt-2">Location</span>
+        </a>
+        <a
+          href="mailto:abdusalamok@gmail.com"
+          class="flex flex-col items-center text-gray-600 hover:text-orange-500 transition-colors"
+        >
+          <div
+            class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center text-orange-500 text-xl"
+          >
+            <i class="fas fa-envelope"></i>
+          </div>
+          <span class="text-sm mt-2">Email</span>
+        </a>
+        <a
+          href="https://drabdusalam.com/"
+          target="_blank"
+          class="flex flex-col items-center text-gray-600 hover:text-orange-500 transition-colors"
+        >
+          <div
+            class="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center text-orange-500 text-xl"
+          >
+            <i class="fas fa-globe"></i>
+          </div>
+          <span class="text-sm mt-2">Web</span>
+        </a>
+      </div>
+
+      <div class="flex justify-center gap-4 px-6 pb-6">
+        <a
+          href="https://www.facebook.com/share/1BNijLoG25"
+          target="_blank"
+          class="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center text-white text-xl transition-transform transform hover:scale-110"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/listening_community"
+          target="_blank"
+          class="w-12 h-12 bg-instagram hover:opacity-90 rounded-full flex items-center justify-center text-white text-xl transition-transform transform hover:scale-110"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://wa.me/+918826752502"
+          target="_blank"
+          class="w-12 h-12 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white text-xl transition-transform transform hover:scale-110"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/listening-community"
+          target="_blank"
+          class="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center text-white text-xl transition-transform transform hover:scale-110"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <div class="px-6 pb-6">
+        <button
+          class="bg-orange-500 hover:bg-orange-600 text-white font-semibold w-full py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+        >
+          Download Brochure
+        </button>
+      </div>
+
+      <div class="bg-gray-50 p-6 text-center border-t border-b">
+        <p class="text-5xl font-bold text-gray-800">4.9</p>
+        <div class="flex justify-center my-2">
+          <i class="fas fa-star text-yellow-400"></i>
+          <i class="fas fa-star text-yellow-400"></i>
+          <i class="fas fa-star text-yellow-400"></i>
+          <i class="fas fa-star text-yellow-400"></i>
+          <i class="fas fa-star-half-alt text-yellow-400"></i>
+        </div>
+        <p class="font-semibold text-gray-700">Google Overall Rating</p>
+        <p class="text-sm text-gray-500">Dr SALAM'S PSYCHIATRY CENTRE</p>
+        <p class="text-sm text-gray-500 mt-1">480+ Reviews</p>
+      </div>
+
+      <div class="p-6">
+        <div class="flex items-start gap-3">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://lh3.googleusercontent.com/a-/ALV-UjWhKesW2Y_udGgNRS7C9vwbdkIG9uYUlSn17RCBkRai--MDxrY=w45-h45-p-rp-mo-br100"
+            alt="profile image"
+          />
+          <div class="flex-1">
+            <h3 class="font-bold text-gray-800">Cbose Vp</h3>
+            <div class="flex items-center text-xs text-gray-500 gap-2 mb-2">
+              <span>August 02, 2025</span>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              A humane touch in dealings and my mother in law is recovering from
+              her mental depression very fast.We are continuing his treatment
+              even after coming to Thiruvananthapuram.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/7WiE4mt3TstT4tEV9"
+              target="_blank"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-gray-600 hover:text-blue-700"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google icon"
+                class="w-4 h-4"
+              />
+              View on Google
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 border-t">
+        <div class="flex items-start gap-3">
+          <div
+            class="w-10 h-10 bg-[#8d6e63] rounded-full flex justify-center items-center text-white text-2xl"
+          >
+            A
+          </div>
+          <div class="flex-1">
+            <h3 class="font-bold text-gray-800">Aysha Ruby</h3>
+            <div class="flex items-center text-xs text-gray-500 gap-2 mb-2">
+              <span>May 22, 2025</span>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Dr. Abdu salam is truly one of the best psychiatrists I’ve come
+              across. His ability to listen with empathy, diagnose accurately,
+              and guide patients with compassion sets him apart. He stays
+              updated with the latest in mental health care and treats every
+              individual with the respect and understanding they deserve. I
+              highly recommend him to everyone
+            </p>
+            <a
+              href="https://maps.app.goo.gl/NhG4d8QaB7fp7FWj8"
+              target="_blank"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-gray-600 hover:text-blue-700"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google icon"
+                class="w-4 h-4"
+              />
+              View on Google
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 border-t">
+        <div class="flex items-start gap-3">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://lh3.googleusercontent.com/a-/ALV-UjUug1TJ_T2xgg6PaLXSh6s_LsO48_6WI5Ziaacmopd4uIlRurk=w45-h45-p-rp-mo-br100"
+            alt="profile image"
+          />
+          <div class="flex-1">
+            <h3 class="font-bold text-gray-800">Yousuf K</h3>
+            <div class="flex items-center text-xs text-gray-500 gap-2 mb-2">
+              <span>june 06, 2025</span>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Dr. Abdul Salam is an exceptionally experienced doctor who
+              genuinely understands and treats patients with empathy. His
+              ability to understand the patient's concerns and provide effective
+              treatment makes him a highly recommended doctor
+            </p>
+            <a
+              href="https://maps.app.goo.gl/ZybwHqEmVKvNincRA"
+              target="_blank"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-gray-600 hover:text-blue-700"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google icon"
+                class="w-4 h-4"
+              />
+              View on Google
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 border-t">
+        <div class="flex items-start gap-3">
+          <div
+            class="w-10 h-10 bg-[#689f38] rounded-full flex justify-center items-center text-white text-2xl"
+          >
+            A
+          </div>
+          <div class="flex-1">
+            <h3 class="font-bold text-gray-800">Anjali j</h3>
+            <div class="flex items-center text-xs text-gray-500 gap-2 mb-2">
+              <span>May 20, 2025</span>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              Dr. Salam is very knowledgeable, patient with clients and
+              regularly keeps a track of the his patient's progress. His
+              treatment has really helped me.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/dCw95iPiaL4e5qMK9"
+              target="_blank"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-gray-600 hover:text-blue-700"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google icon"
+                class="w-4 h-4"
+              />
+              View on Google
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 border-t">
+        <div class="flex items-start gap-3">
+          <img
+            class="w-10 h-10 rounded-full"
+            src="https://lh3.googleusercontent.com/a-/ALV-UjVgc2Jn1L1Ank3s1-J1j0arJOPpW2m24Yh_IGkNCYrdTImdyJbk=w45-h45-p-rp-mo-br100"
+            alt="profile image"
+          />
+          <div class="flex-1">
+            <h3 class="font-bold text-gray-800">Ikram Ikram</h3>
+            <div class="flex items-center text-xs text-gray-500 gap-2 mb-2">
+              <span>june 03, 2025</span>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              “The best doctor I’ve ever met — someone you can confidently
+              recommend to friends.”
+            </p>
+            <a
+              href="https://maps.app.goo.gl/2bN68zpyrZbKikobA"
+              target="_blank"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-gray-600 hover:text-blue-700"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google icon"
+                class="w-4 h-4"
+              />
+              View on Google
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="p-6 border-t">
+        <div class="flex items-start gap-3">
+          <div
+            class="w-10 h-10 bg-[#004d40] rounded-full flex justify-center items-center text-white text-2xl"
+          >
+            r
+          </div>
+          <div class="flex-1">
+            <h3 class="font-bold text-gray-800">rafeeque mambra</h3>
+            <div class="flex items-center text-xs text-gray-500 gap-2 mb-2">
+              <span>june 06, 2025</span>
+              <div class="flex">
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+                <i class="fas fa-star text-yellow-400 text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm text-gray-700 leading-relaxed">
+              With immense knowlege from a AIIMS delhi and NIMHANS Dr. Salam is
+              a great psychologist to consult with. I had a great session with
+              him.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/JmcrMERNarNs6ZRd6 "
+              target="_blank"
+              class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-gray-600 hover:text-blue-700"
+            >
+              <img
+                src="https://www.google.com/favicon.ico"
+                alt="Google icon"
+                class="w-4 h-4"
+              />
+              View on Google
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center pb-5">
+        <a
+          href="https://www.google.com/maps/place/Dr+SALAM'S+PSYCHIATRY+CENTRE/@11.0449163,76.1031085,16.61z/data=!4m8!3m7!1s0x3ba635b226dc0815:0x9745ef9f262fd4b3!8m2!3d11.0446875!4d76.1058186!9m1!1b1!16s%2Fg%2F11nxqyvmgx?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D "
+          target="_blank"
+          class="text-blue-600 hover:underline"
+          >See more on google</a
+        >
+      </div>
+    </div>
+    <div
+      id="qrModal"
+      class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center p-4 z-50"
+    >
+      <div
+        class="bg-white rounded-lg shadow-xl text-center p-8 relative max-w-xs w-full"
+      >
+        <button
+          id="closeQrModal"
+          class="absolute top-2 right-2 text-gray-400 hover:text-gray-800 text-2xl"
+        >
+          &times;
+        </button>
+        <img
+          id="qrCodeImage"
+          src=""
+          alt="QR Code"
+          class="w-48 h-48 mx-auto mb-4"
+        />
+        <h3 class="text-xl font-bold text-gray-800">Scan the QR Code</h3>
+        <p class="text-gray-500 mt-1">
+          to view my Business Card on another device
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- Save Contact functionality ---
+        document
+          .getElementById("saveContactBtn")
+          .addEventListener("click", function () {
+            const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Dr. Abdu Salam Ok
+TITLE:Psychiatrist
+TEL;TYPE=WORK,VOICE:+918826752502
+EMAIL:abdusalamok@gmail.com
+ADR;TYPE=WORK:;;24V4+V8;koottilangadi;Malappuram;Kerala;676506;India
+NOTE:Psychiatrist at Almas HOSPITAL, Kottakal, MBH Hospital, Malappuram, MIMHAR , Malappuram
+END:VCARD`;
+
+            const blob = new Blob([vcard], {
+              type: "text/vcard;charset=utf-8",
+            });
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = "Dr-Abdu-Salam.vcf";
+            link.click();
+            window.URL.revokeObjectURL(url);
+          });
+
+        // --- QR Code Modal functionality ---
+        const qrButton = document.getElementById("qrButton");
+        const qrModal = document.getElementById("qrModal");
+        const closeQrModal = document.getElementById("closeQrModal");
+        const qrCodeImage = document.getElementById("qrCodeImage");
+        const pageUrl = window.location.href;
+
+        // Set QR code image source using an API
+        qrCodeImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(
+          pageUrl
+        )}`;
+
+        qrButton.addEventListener("click", () => {
+          qrModal.classList.remove("hidden");
+          qrModal.classList.add("flex");
+        });
+
+        const closeModal = () => {
+          qrModal.classList.add("hidden");
+          qrModal.classList.remove("flex");
+        };
+
+        closeQrModal.addEventListener("click", closeModal);
+        qrModal.addEventListener("click", (event) => {
+          // Close modal if backdrop is clicked
+          if (event.target === qrModal) {
+            closeModal();
+          }
+        });
+
+        // --- Web Share API functionality ---
+        const shareButton = document.getElementById("shareButton");
+        shareButton.addEventListener("click", async () => {
+          const shareData = {
+            title: "Dr. Abdu Salam Ok - Digital vCard",
+            text: "Here is the digital business card for Dr. Abdu Salam Ok.",
+            url: pageUrl,
+          };
+
+          if (navigator.share) {
+            try {
+              await navigator.share(shareData);
+            } catch (err) {
+              console.error("Share failed:", err);
+            }
+          } else {
+            // Fallback for desktop/unsupported browsers
+            try {
+              await navigator.clipboard.writeText(pageUrl);
+              alert("Link copied to clipboard!");
+            } catch (err) {
+              console.error("Failed to copy link:", err);
+              alert("Could not copy link.");
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

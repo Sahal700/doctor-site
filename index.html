@@ -129,11 +129,33 @@
       <!-- Mobile Nav (hidden by default) -->
       <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6">
         <nav class="flex flex-col font-medium">
-          <a href="#home" onclick="mobileScrollToId(event,'home')" class="menu-item">Home</a>
-          <a href="#about" onclick="mobileScrollToId(event,'about')" class="menu-item">About</a>
-          <a href="#services" onclick="mobileScrollToId(event,'services')" class="menu-item">Services</a>
-          <a href="#op" onclick="mobileScrollToId(event,'op')" class="menu-item">OP Schedule</a>
-          <a href="#contact" onclick="mobileScrollToId(event,'contact')" class="menu-item">Contact</a>
+          <a
+            href="#home"
+            onclick="mobileScrollToId(event,'home')"
+            class="menu-item"
+            >Home</a
+          >
+          <a
+            href="#about"
+            onclick="mobileScrollToId(event,'about')"
+            class="menu-item"
+            >About</a
+          >
+          <a
+            href="#services"
+            onclick="mobileScrollToId(event,'services')"
+            class="menu-item"
+            >Services</a
+          >
+          <a href="#op" onclick="mobileScrollToId(event,'op')" class="menu-item"
+            >OP Schedule</a
+          >
+          <a
+            href="#contact"
+            onclick="mobileScrollToId(event,'contact')"
+            class="menu-item"
+            >Contact</a
+          >
           <button
             onclick="mobileScrollToId(event,'booking-section') "
             class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2 mb-4"
@@ -143,10 +165,17 @@
         </nav>
       </div>
     </header>
+
+    <a
+      href="./vcard.html"
+      class="w-min-content p-2 text-white font-bold bg-orange-500 class absolute fixed right-0 top-[50%] z-[90] rounded"
+    >
+      Digi Card
+    </a>
     <!-- Hero Section -->
     <section
       id="home"
-      class="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-8 lg:gap-12 pt-8 pb-0 md:pt-16 md:pb-0 lg:pt-20 lg:pb-0 px-4 sm:px-6 lg:px-8 w-full overflow-hidden"
+      class="max-w-7xl mx-auto grid lg :grid-cols-2 items-center gap-8 lg:gap-12 pt-8 pb-0 md:pt-16 md:pb-0 lg:pt-20 lg:pb-0 px-4 sm:px-6 lg:px-8 w-full overflow-hidden"
     >
       <!-- Left Content -->
       <div class="space-y-6 lg:space-y-8">
@@ -216,9 +245,9 @@
       >
         <div class="relative">
           <img
-            src="./images/hero.webp"
+            src="./images/hero_doctor.jpg"
             alt="Therapy session with Dr. Andrew Smith"
-            class="rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover"
+            class="rounded-2xl shadow-2xl w-full h-64 sm:h-[450px] lg:h-[450px] object-cover object-[20%_25%]"
           />
 
           <!-- Floating card overlay -->
@@ -499,7 +528,7 @@
             <div class="flex mt-3 space-x-8 text-3xl">
               <!-- Instagram -->
               <a
-                href="instagram.com/listening_community/"
+                href="https://www.instagram.com/listening_community"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="relative text-gray-500 hover:text-orange-500 transition-colors duration-300 group"
@@ -525,7 +554,7 @@
 
               <!-- LinkedIn -->
               <a
-                href="linkedin.com/company/listening-community/"
+                href="https://www.linkedin.com/company/listening-community"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="relative text-gray-500 hover:text-blue-600 transition-colors duration-300 group"
@@ -1134,13 +1163,22 @@
 
           <!-- Other Pages -->
           <div class="md:text-right">
-            <h3 class="text-white text-xl font-medium mb-4 md:mb-8">Other Pages</h3>
+            <h3 class="text-white text-xl font-medium mb-4 md:mb-8">
+              Other Pages
+            </h3>
             <ul class="space-y-4">
               <li>
                 <a
                   href="./termsAndCondition.html"
                   class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
                   >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./vcard.html"
+                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
+                  >Digi Card</a
                 >
               </li>
             </ul>
@@ -1152,7 +1190,6 @@
           <div
             class="flex flex-col md:flex-row justify-center items-center text-gray-600 text-xs"
           >
-            
             <p class="mt-2 md:mt-0">Copyright © 2025. All rights reserved.</p>
           </div>
         </div>
