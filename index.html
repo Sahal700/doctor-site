@@ -289,10 +289,94 @@
       </div>
     </section>
 
+    <!-- Awareness video section -->
+    <section id="awareness-video-section" class="w-full overflow-hidden">
+      <div
+        class="max-w-6xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-5 sm:gap-10 items-center py-14 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="space-y-2 sm:space-y-4 order-last lg:order-first">
+          <p
+            class="text-sm uppercase tracking-widest font-semibold text-gray-500"
+          >
+            Watch
+          </p>
+          <h2 class="sm:text-3xl font-bold leading-relaxed text-gray-900">
+            ഭാര്യയ്ക്ക് മൂഡ് സ്വിങ് വരുമ്പോൾ ഭർത്താക്കന്മാർ ചെയ്യേണ്ടത് ഇതാണ്!
+            <span
+              id="pms-more-toggle"
+              class="sm:hidden inline-block text-blue-500 text-sm font-medium cursor-pointer align-middle"
+              >more...</span
+            >
+          </h2>
+          <div
+            id="pms-more-content"
+            class="mobile-collapse space-y-2 sm:space-y-3"
+          >
+            <p class="text-sm sm:text-lg text-gray-700 leading-relaxed">
+              പ്രീമെൻസ്ട്രുവൽ സിംപ്റ്റംസ് (PMS) ഉള്ള ഭാര്യ ദേഷ്യപ്പെടുകയോ
+              കരയുകയോ ചെയ്താൽ നിങ്ങൾ എന്ത് ചെയ്യണം? ഒരു മിനിറ്റ് ദൈർഘ്യമുള്ള ഈ
+              വീഡിയോ എല്ലാ കുടുംബബന്ധങ്ങൾക്കും ഒരു പാഠമാണ്.
+            </p>
+            <ul
+              class="list-disc text-sm sm:text-lg pl-5 text-gray-700 space-y-1"
+            >
+              <li>അവരെ കേൾക്കുക</li>
+              <li>അവരുടെ വിഷമം അംഗീകരിക്കുക (Validate)</li>
+              <li>തിരിച്ച് പ്രതികരിക്കാതെ കൂടുതൽ കെയർ കൊടുക്കുക</li>
+            </ul>
+            <p class="text-sm sm:text-lg text-gray-700">
+              പരിഹാരം: നിർബന്ധമായും Psychiatrist നെ കാണണം.
+            </p>
+          </div>
+          <div
+            class="hidden sm:flex flex-wrap items-center gap-3 text-sm text-gray-600"
+          >
+            <button
+              id="video-play-chip"
+              type="button"
+              class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-orange-600 font-semibold chip-button"
+            >
+              Tap to play
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-[420px]">
+            <div
+              class="rounded-2xl shadow-2xl bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 p-1"
+            >
+              <div
+                class="rounded-xl overflow-hidden bg-black relative"
+                style="aspect-ratio: 9 / 16"
+              >
+                <div
+                  id="video-skeleton"
+                  class="video-skeleton"
+                  aria-hidden="true"
+                ></div>
+                <video
+                  id="mental-health-video"
+                  class="w-full h-full object-cover opacity-0 transition-opacity duration-500"
+                  playsinline
+                  controls
+                  muted
+                  preload="none"
+                >
+                  <source data-src="./images/vid1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- booking section -->
     <section
       id="booking-section"
-      class="fade-in text-white py-16 px-4 sm:px-6 lg:px-8 translate-y-[50px] opacity-0 w-full overflow-hidden"
+      class="fade-in text-white pb-14 sm:py-16 px-4 sm:px-6 lg:px-8 translate-y-[50px] opacity-0 w-full overflow-hidden"
     >
       <div class="max-w-6xl mx-auto">
         <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">

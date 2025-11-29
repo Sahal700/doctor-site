@@ -264,6 +264,95 @@ Please confirm my booking. Thank you!`;
   });
 });
 
+// Mobile-only "more..." toggle for PMS description
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("pms-more-toggle");
+  const content = document.getElementById("pms-more-content");
+  if (!toggle || !content) return;
+
+  const setLabel = () => {
+    const expanded = content.classList.contains("expanded");
+    toggle.textContent = expanded ? "less..." : "more...";
+  };
+
+  const ensureDesktopOpen = () => {
+    if (window.matchMedia("(min-width: 640px)").matches) {
+      content.classList.add("expanded");
+    }
+    setLabel();
+  };
+
+  toggle.addEventListener("click", () => {
+    content.classList.toggle("expanded");
+    setLabel();
+  });
+
+  ensureDesktopOpen();
+  window.addEventListener("resize", ensureDesktopOpen);
+});
+
+// Delay loading the portrait video until the entire page has finished loading
+window.addEventListener("load", () => {
+  const video = document.getElementById("mental-health-video");
+  if (!video) return;
+
+  const skeleton = document.getElementById("video-skeleton");
+  const chipBtn = document.getElementById("video-play-chip");
+  const sourceEl = video.querySelector("source");
+  const src = sourceEl?.dataset.src || video.dataset.src;
+
+  if (!src) return;
+
+  const setChipLabel = (text) => {
+    if (chipBtn) chipBtn.textContent = text;
+  };
+
+  const togglePlayPause = () => {
+    if (!video.paused && !video.ended) {
+      video.pause();
+      return;
+    }
+    video.play().catch(() => {
+      setChipLabel("Tap to play");
+    });
+  };
+
+  const revealVideo = () => {
+    video.classList.remove("opacity-0");
+    skeleton?.classList.add("hidden");
+  };
+
+  const handleError = () => {
+    skeleton?.classList.add("hidden");
+  };
+
+  if (video.readyState >= 2) {
+    revealVideo();
+  } else {
+    video.addEventListener("loadeddata", revealVideo, { once: true });
+    video.addEventListener("canplaythrough", revealVideo, { once: true });
+    video.addEventListener("error", handleError, { once: true });
+    setTimeout(revealVideo, 8000); // fallback to clear skeleton
+  }
+
+  if (sourceEl) {
+    sourceEl.src = src;
+  } else {
+    video.src = src;
+  }
+
+  video.load();
+
+  // Tap/click to toggle play/pause
+  chipBtn?.addEventListener("click", togglePlayPause);
+
+  video.addEventListener("play", () => setChipLabel("Pause"));
+
+  video.addEventListener("pause", () => setChipLabel("Tap to play"));
+
+  video.addEventListener("ended", () => setChipLabel("Tap to play"));
+});
+
 function openLocation(link) {
   window.open(link, "_blank");
 }

@@ -115,3 +115,45 @@ input:-webkit-autofill {
   margin: 0;
   text-align: left; /* ensure left alignment */
 }
+
+/* Skeleton shimmer for lazy video */
+.video-skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, #111 20%, #1f1f1f 40%, #111 60%);
+  background-size: 200% 100%;
+  animation: videoShimmer 1.5s ease-in-out infinite;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.chip-button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font: inherit;
+  padding: 0;
+}
+
+.mobile-collapse {
+  display: none;
+}
+
+.mobile-collapse.expanded {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .mobile-collapse {
+    display: block;
+  }
+}
+
+@keyframes videoShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
