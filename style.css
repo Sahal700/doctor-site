@@ -117,22 +117,59 @@ input:-webkit-autofill {
 }
 
 /* Skeleton shimmer for lazy video */
-.video-skeleton {
+.video-thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.3s ease;
+}
+
+.video-thumb:hover img {
+  transform: scale(1.02);
+}
+
+.video-thumb-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, #111 20%, #1f1f1f 40%, #111 60%);
-  background-size: 200% 100%;
-  animation: videoShimmer 1.5s ease-in-out infinite;
-  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
   pointer-events: none;
 }
 
-.chip-button {
-  border: none;
-  cursor: pointer;
-  background: none;
-  font: inherit;
-  padding: 0;
+.video-thumb-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-thumb-play::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.65);
+  display: block;
+  position: relative;
+}
+
+.video-thumb-play::after {
+  content: "";
+  position: absolute;
+  margin-left: 4px;
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent #fff;
 }
 
 .mobile-collapse {
@@ -146,14 +183,5 @@ input:-webkit-autofill {
 @media (min-width: 640px) {
   .mobile-collapse {
     display: block;
-  }
-}
-
-@keyframes videoShimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
   }
 }

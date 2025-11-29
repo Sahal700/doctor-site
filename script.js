@@ -291,66 +291,72 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", ensureDesktopOpen);
 });
 
-// Delay loading the portrait video until the entire page has finished loading
-window.addEventListener("load", () => {
-  const video = document.getElementById("mental-health-video");
-  if (!video) return;
+// Launch the portrait video in fullscreen on thumbnail click
+document.addEventListener("DOMContentLoaded", () => {
+  const launcher = document.getElementById("video-launcher");
+  const videoSrc = launcher?.dataset.src;
+  if (!launcher || !videoSrc) return;
 
-  const skeleton = document.getElementById("video-skeleton");
-  const chipBtn = document.getElementById("video-play-chip");
-  const sourceEl = video.querySelector("source");
-  const src = sourceEl?.dataset.src || video.dataset.src;
+  launcher.addEventListener("click", async () => {
+    const video = document.createElement("video");
+    video.src = videoSrc;
+    video.controls = true;
+    video.autoplay = true;
+    video.playsInline = false;
+    video.muted = false;
+    video.style.background = "#000";
+    video.style.width = "100%";
+    video.style.height = "100%";
 
-  if (!src) return;
+    document.body.appendChild(video);
 
-  const setChipLabel = (text) => {
-    if (chipBtn) chipBtn.textContent = text;
-  };
-
-  const togglePlayPause = () => {
-    if (!video.paused && !video.ended) {
+    const cleanup = () => {
       video.pause();
-      return;
+      video.currentTime = 0;
+      video.remove();
+      document.removeEventListener("fullscreenchange", handleFullChange);
+    };
+
+    const handleFullChange = () => {
+      if (document.fullscreenElement !== video) {
+        cleanup();
+      }
+    };
+
+    document.addEventListener("fullscreenchange", handleFullChange);
+
+    let fullscreenOk = false;
+    try {
+      if (video.requestFullscreen) {
+        await video.requestFullscreen();
+        fullscreenOk = true;
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+        fullscreenOk = true;
+      }
+    } catch (err) {
+      // Fallback handled below
     }
-    video.play().catch(() => {
-      setChipLabel("Tap to play");
-    });
-  };
 
-  const revealVideo = () => {
-    video.classList.remove("opacity-0");
-    skeleton?.classList.add("hidden");
-  };
+    if (!fullscreenOk) {
+      video.style.position = "fixed";
+      video.style.inset = "0";
+      video.style.zIndex = "9999";
+    }
 
-  const handleError = () => {
-    skeleton?.classList.add("hidden");
-  };
+    video.play().catch(() => {});
 
-  if (video.readyState >= 2) {
-    revealVideo();
-  } else {
-    video.addEventListener("loadeddata", revealVideo, { once: true });
-    video.addEventListener("canplaythrough", revealVideo, { once: true });
-    video.addEventListener("error", handleError, { once: true });
-    setTimeout(revealVideo, 8000); // fallback to clear skeleton
-  }
-
-  if (sourceEl) {
-    sourceEl.src = src;
-  } else {
-    video.src = src;
-  }
-
-  video.load();
-
-  // Tap/click to toggle play/pause
-  chipBtn?.addEventListener("click", togglePlayPause);
-
-  video.addEventListener("play", () => setChipLabel("Pause"));
-
-  video.addEventListener("pause", () => setChipLabel("Tap to play"));
-
-  video.addEventListener("ended", () => setChipLabel("Tap to play"));
+    video.addEventListener(
+      "ended",
+      () => {
+        if (fullscreenOk && document.fullscreenElement === video) {
+          document.exitFullscreen?.();
+        }
+        cleanup();
+      },
+      { once: true }
+    );
+  });
 });
 
 function openLocation(link) {
