@@ -219,7 +219,7 @@ gsap.to(".tile-group-op", {
 
 // ---------------------------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  const BUSINESS_WHATSAPP_NUMBER = "+918826752502";
+  const BUSINESS_WHATSAPP_NUMBER = "+919037489654";
   // Get references to the form and the new notification element
   const bookingForm = document.getElementById("booking-form");
   const successNotification = document.getElementById("success-notification");
@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
       video.style.zIndex = "9999";
     }
 
-    video.play().catch(() => {});
+    video.play().catch(() => { });
 
     video.addEventListener(
       "ended",
