@@ -219,49 +219,63 @@ gsap.to(".tile-group-op", {
 
 // ---------------------------------------------------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  const BUSINESS_WHATSAPP_NUMBER = "+919037489654";
-  // Get references to the form and the new notification element
+  // wa.me requires digits only (no leading plus sign)
+  const BUSINESS_WHATSAPP_NUMBER = "919037489654";
   const bookingForm = document.getElementById("booking-form");
   const successNotification = document.getElementById("success-notification");
+  const policyAgreeInline = document.getElementById("policy-agree-inline");
+  const bookingSubmit = document.getElementById("booking-submit");
+  const nameInput = document.getElementById("name");
 
-  // Listen for the form's 'submit' event
-  bookingForm.addEventListener("submit", function (event) {
-    // Prevent the page from reloading
+  const updateBookingButton = () => {
+    if (!bookingSubmit) return;
+    const hasName = (nameInput?.value || "").trim().length > 0;
+    const agreed = policyAgreeInline?.checked;
+    bookingSubmit.disabled = !(hasName && agreed);
+  };
+
+  const sendBookingRequest = (name) => {
+    const message = `Hello, I'd like to book a session.
+
+Name: ${name}
+
+I have read and agree to the Terms and Conditions.
+
+Please confirm my booking. Thank you.`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+    const opened = window.open(whatsappURL, "_blank");
+    if (!opened) {
+      window.location.href = whatsappURL;
+    }
+    successNotification?.classList.remove("hidden");
+
+    setTimeout(() => {
+      successNotification?.classList.add("hidden");
+    }, 5000);
+
+    bookingForm?.reset();
+    if (policyAgreeInline) policyAgreeInline.checked = false;
+    updateBookingButton();
+  };
+
+  bookingForm?.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const formData = new FormData(bookingForm);
-    const name = formData.get("name").trim();
+    const name = (formData.get("name") || "").trim();
 
-    if (!name) {
-      alert("Please fill in all fields");
-      return;
-    }
+    if (!name) return;
+    if (policyAgreeInline && !policyAgreeInline.checked) return;
 
-    const message = `Hi! I would like to book a session.
-                
-Name: ${name}
-                
-Please confirm my booking. Thank you!`;
-
-    const encodedMessage = encodeURIComponent(message);
-
-    const whatsappURL = `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodedMessage}`;
-
-    window.open(whatsappURL, "_blank");
-
-    // --- Show the notification ---
-    // We just remove the 'hidden' class to make it appear instantly
-    successNotification.classList.remove("hidden");
-
-    // --- Hide the notification after 5 seconds ---
-    setTimeout(() => {
-      // Add the 'hidden' class back to make it disappear
-      successNotification.classList.add("hidden");
-    }, 5000); // 5000 milliseconds = 5 seconds
-
-    // Reset the form fields
-    bookingForm.reset();
+    sendBookingRequest(name);
   });
+
+  nameInput?.addEventListener("input", updateBookingButton);
+  policyAgreeInline?.addEventListener("change", updateBookingButton);
+  updateBookingButton();
 });
 
 // Mobile-only "more..." toggle for PMS description
@@ -360,5 +374,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function openLocation(link) {
+  if (link && link.startsWith("#")) {
+    const target = document.querySelector(link);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+  }
   window.open(link, "_blank");
 }
