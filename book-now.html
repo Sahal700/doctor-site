@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Book Now - Dr. Abdu Salam OK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .animate-element {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      .plan-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .plan-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navbar -->
+    <header class="bg-[#2b1d0f] text-white">
+      <div class="ms-2 flex items-center py-4 px-6">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center font-bold">
+            <i class="fas fa-user-md text-white"></i>
+          </div>
+          <a href="index.html" class="text-2xl font-medium">Dr. Abdu Salam OK</a>
+        </div>
+        <nav class="hidden md:flex space-x-10 font-medium ms-20 text-sm">
+          <a href="index.html#home" class="hover:text-orange-400 transition duration-500 ease-in-out">Home</a>
+          <a href="index.html#about" class="hover:text-orange-400 transition duration-500 ease-in-out">About</a>
+          <a href="index.html#services" class="hover:text-orange-400 transition duration-500 ease-in-out">Services</a>
+          <a href="index.html#op" class="hover:text-orange-400 transition duration-500 ease-in-out">OP Schedule</a>
+          <a href="index.html#contact" class="hover:text-orange-400 transition duration-500 ease-in-out">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden focus:outline-none ms-auto">
+          <svg class="w-8 h-8" viewBox="0 0 24 24">
+            <path class="line top" d="M4 6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path class="line middle" d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path class="line bottom" d="M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6">
+        <nav class="flex flex-col font-medium">
+          <a href="index.html#home" class="menu-item">Home</a>
+          <a href="index.html#about" class="menu-item">About</a>
+          <a href="index.html#services" class="menu-item">Services</a>
+          <a href="index.html#op" class="menu-item">OP Schedule</a>
+          <a href="index.html#contact" class="menu-item">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center mb-12 animate-element">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Choose Your Plan</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Select a consultation plan below to get started. Please fill in your details first.
+        </p>
+      </div>
+
+      <!-- Booking Form Header -->
+      <div class="bg-white rounded-2xl shadow-xl p-8 mb-12 border border-gray-100 animate-element">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <label for="user-name" class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Your Full Name</label>
+            <input 
+              type="text" 
+              id="user-name" 
+              placeholder="e.g. John Doe" 
+              class="w-full px-5 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:border-orange-500 focus:bg-white focus:outline-none transition-all"
+            />
+          </div>
+          <div class="flex items-start space-x-3 pt-2 md:pt-6">
+            <div class="flex items-center h-5">
+              <input 
+                type="checkbox" 
+                id="agree-terms" 
+                class="w-6 h-6 text-orange-500 border-gray-300 rounded-lg focus:ring-orange-500 cursor-pointer transition-all"
+              />
+            </div>
+            <label for="agree-terms" class="text-sm text-gray-600 cursor-pointer leading-tight">
+              I have read and agree to the <a href="termsAndCondition.html" target="_blank" class="text-orange-500 font-bold hover:underline">Terms and Conditions</a>. 
+              By checking this, I consent to being contacted via WhatsApp.
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plans Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+        <!-- Plan 1 -->
+        <div class="plan-card bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col h-full animate-element border border-gray-100">
+          <div class="aspect-[3/4] overflow-hidden relative group">
+            <img src="./images/book1.jpeg" alt="90-Day Transformation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+          </div>
+          <div class="p-8 mt-auto text-center">
+            <button 
+              onclick="bookViaWhatsapp('90-Day Transformation', '₹25,000')"
+              class="w-full bg-orange-500 text-white font-bold py-4 px-8 rounded-2xl hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30 transform active:scale-95"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="plan-card bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col h-full animate-element border border-gray-100">
+          <div class="aspect-[3/4] overflow-hidden relative group">
+            <img src="./images/book2.jpeg" alt="Deeper Support" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+          </div>
+          <div class="p-8 mt-auto text-center">
+            <button 
+              onclick="bookViaWhatsapp('90-Day Transformation (Deeper Support)', '₹25,000')"
+              class="w-full bg-orange-500 text-white font-bold py-4 px-8 rounded-2xl hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30 transform active:scale-95"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="plan-card bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col h-full animate-element border border-gray-100">
+          <div class="aspect-[3/4] overflow-hidden relative group">
+            <img src="./images/book3.jpeg" alt="Deep Support" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+          </div>
+          <div class="p-8 mt-auto text-center">
+            <button 
+              onclick="bookViaWhatsapp('Deep Support', '₹4,999')"
+              class="w-full bg-orange-500 text-white font-bold py-4 px-8 rounded-2xl hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30 transform active:scale-95"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 4 -->
+        <div class="plan-card bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col h-full animate-element border border-gray-100">
+          <div class="aspect-[3/4] overflow-hidden relative group">
+            <img src="./images/book4.jpeg" alt="Starter Session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+          </div>
+          <div class="p-8 mt-auto text-center">
+            <button 
+              onclick="bookViaWhatsapp('Starter Session', '₹999')"
+              class="w-full bg-orange-500 text-white font-bold py-4 px-8 rounded-2xl hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30 transform active:scale-95"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Plan 5 -->
+        <div class="plan-card bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col h-full animate-element border border-gray-100">
+          <div class="aspect-[3/4] overflow-hidden relative group">
+            <img src="./images/book6.jpeg" alt="Monthly Support" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
+          </div>
+          <div class="p-8 mt-auto text-center">
+            <button 
+              onclick="bookViaWhatsapp('Monthly Support', '₹15,000')"
+              class="w-full bg-orange-500 text-white font-bold py-4 px-8 rounded-2xl hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-500/30 transform active:scale-95"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a120b] py-20 px-4 md:px-8 lg:px-16 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex items-center justify-center space-x-3 mb-8">
+            <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-bold">
+                <i class="fas fa-user-md text-white"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-white tracking-tight">Dr. Abdu Salam OK</h2>
+        </div>
+        <p class="text-gray-400 text-lg max-w-md mx-auto mb-10 leading-relaxed">
+          Koottilangadi, Malappuram, Kerala 676506<br />
+          <span class="text-orange-500 font-bold">90374 89654</span><br />
+          abdusalamok@gmail.com
+        </p>
+        <div class="flex justify-center space-x-6 mb-12">
+            <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="border-t border-gray-800/50 pt-10">
+          <p class="text-gray-600 text-sm">Copyright © 2025 Dr. Abdu Salam OK. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      // Mobile Menu Logic
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        mobileMenu.classList.toggle("open");
+      });
+
+      // GSAP Animations
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.to(".animate-element", {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power4.out"
+        });
+      });
+
+      // WhatsApp Booking Logic
+      function bookViaWhatsapp(planName, price) {
+        const name = document.getElementById("user-name").value.trim();
+        const agreed = document.getElementById("agree-terms").checked;
+
+        if (!name) {
+          alert("Please enter your name to proceed.");
+          document.getElementById("user-name").focus();
+          return;
+        }
+
+        if (!agreed) {
+          alert("Please agree to the Terms and Conditions before booking.");
+          return;
+        }
+
+        const BUSINESS_NUMBER = "919037489654";
+        const message = `Hello Dr. Abdu Salam OK,
+
+I am *${name}*. 
+
+I have read and agree to the Terms and Conditions.
+I am interested in the: *${planName}* (${price})
+
+Please let me know the next steps for booking. Thank you!`;
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${BUSINESS_NUMBER}?text=${encodedMessage}`;
+        
+        window.open(whatsappURL, "_blank");
+      }
+    </script>
+  </body>
+</html>
