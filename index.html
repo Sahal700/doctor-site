@@ -1,222 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <title>Dr. Abdu Salam OK</title>
 
-    <!-- Tailwind (CDN version, good for quick setups) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Dr. Abdu Salam OK</title>
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Tailwind (CDN version, good for quick setups) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- fontawsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <!-- GSAP (CDN) -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="bg-white text-gray-900">
-    <!-- Navbar -->
-    <header class="bg-[#2b1d0f] text-white">
-      <div class="ms-2 flex items-center py-4 px-6">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2">
-          <div
-            class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center font-bold"
-          >
-            <i class="fas fa-user-md text-white"></i>
-          </div>
-          <span class="text-2xl font-medium">Dr. Abdu Salam OK</span>
+  <!-- GSAP (CDN) -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-[#2b1d0f] text-white">
+    <div class="ms-2 flex items-center py-4 px-6">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center font-bold">
+          <i class="fas fa-user-md text-white"></i>
         </div>
+        <span class="text-2xl font-medium">Dr. Abdu Salam OK</span>
+      </div>
 
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-10 font-medium ms-20 text-sm">
-          <a
-            href="#home"
-            class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400"
-            >Home</a
-          >
-          <a
-            href="#about"
-            class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400"
-            >About</a
-          >
-          <a
-            href="#services"
-            class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400"
-            >Services</a
-          >
-          <a
-            href="#op"
-            class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400"
-            >OP Schedule</a
-          >
-          <a
-            href="#contact"
-            class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400"
-            >Contact</a
-          >
-        </nav>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-10 font-medium ms-20 text-sm">
+        <a href="#home" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Home</a>
+        <a href="#about"
+          class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">About</a>
+        <a href="#services"
+          class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Services</a>
+        <a href="#op" class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">OP
+          Schedule</a>
+        <a href="book-now.html"
+          class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Plans</a>
+        <a href="#contact"
+          class="hover:text-orange-400 transition duration-500 ease-in-out focus:text-orange-400">Contact</a>
+      </nav>
 
-        <!-- Appointment Button -->
-        <a
-          href="book-now.html"
-          class="hidden md:inline-flex items-center justify-center group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-orange-500 px-8 py-2 text-white font-semibold ms-auto me-4"
-        >
-          <span class="relative z-10">Make Appointment</span
-          ><span class="absolute inset-0 overflow-hidden rounded-md"
-            ><span
-              class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"
-            ></span
-          ></span>
-        </a>
+      <!-- Appointment Button -->
+      <a href="book-now.html"
+        class="hidden md:inline-flex items-center justify-center group relative h-12 overflow-hidden overflow-x-hidden rounded-md bg-orange-500 px-8 py-2 text-white font-semibold ms-auto me-4">
+        <span class="relative z-10">Make Appointment</span><span
+          class="absolute inset-0 overflow-hidden rounded-md"><span
+            class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span>
+      </a>
 
-        <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="md:hidden focus:outline-none ms-auto">
-          <svg class="w-8 h-8" viewBox="0 0 24 24">
-            <path
-              class="line top"
-              d="M4 6h16"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              class="line middle"
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              class="line bottom"
-              d="M4 18h16"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </button>
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none ms-auto">
+        <svg class="w-8 h-8" viewBox="0 0 24 24">
+          <path class="line top" d="M4 6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path class="line middle" d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path class="line bottom" d="M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
 
-        <!-- <button id="appointmentBtn" class="hidden md:inline bg-gradient-to-r from-orange-500 to-orange-600 
+      <!-- <button id="appointmentBtn" class="hidden md:inline bg-gradient-to-r from-orange-500 to-orange-600 
          hover:from-orange-600 hover:to-orange-700 
          text-white px-8 py-4 rounded  ms-auto me-4
          transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
         Make Appointment
       </button> -->
+    </div>
+
+    <!-- Mobile Nav (hidden by default) -->
+    <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6">
+      <nav class="flex flex-col font-medium">
+        <a href="#home" onclick="mobileScrollToId(event,'home')" class="menu-item">Home</a>
+        <a href="#about" onclick="mobileScrollToId(event,'about')" class="menu-item">About</a>
+        <a href="#services" onclick="mobileScrollToId(event,'services')" class="menu-item">Services</a>
+        <a href="#op" onclick="mobileScrollToId(event,'op')" class="menu-item">OP Schedule</a>
+        <a href="book-now.html" class="menu-item">Plans</a>
+        <a href="#contact" onclick="mobileScrollToId(event,'contact')" class="menu-item">Contact</a>
+        <a href="book-now.html"
+          class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2 mb-4 text-center">
+          Make Appointment
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <a href="./vcard.html"
+    class="w-min-content p-2 text-white font-bold bg-orange-500 hidden lg:block absolute right-0 top-[50%] z-[90] rounded">
+    Digi Card
+  </a>
+  <!-- Hero Section -->
+  <section id="home"
+    class="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-8 lg:gap-12 pt-8 pb-0 md:pt-16 md:pb-0 lg:pt-20 lg:pb-10 px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
+    <!-- Left Content -->
+    <div class="space-y-6 lg:space-y-8">
+      <p
+        class="animate-element mt-12 lg:mt-0 text-xl sm:text-xl font-semibold text-gray-700 tracking-wide uppercase translate-y-[50px] opacity-0">
+        Dr. Abdu Salam OK
+      </p>
+
+      <h1
+        class="animate-element text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 translate-y-[50px] opacity-0">
+        The Importance of
+        <span class="text-orange-500 block sm:inline">Mental Health</span>
+        For a Better Life
+      </h1>
+
+      <p
+        class="animate-element text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg translate-y-[50px] opacity-0">
+        Good mental health is the foundation of a fulfilling life. It shapes
+        how we think, feel, and connect with others, helping us handle stress,
+        build strong relationships, and make better choices every day.
+      </p>
+
+      <div
+        class="animate-element flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 translate-y-[50px] opacity-0">
+        <a href="#contact"
+          class="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-orange-600 transition-colors duration-300 text-center">
+          Contact
+        </a>
       </div>
 
-      <!-- Mobile Nav (hidden by default) -->
-      <div id="mobile-menu" class="mobile-menu md:hidden bg-[#2b1d0f] px-6">
-        <nav class="flex flex-col font-medium">
-          <a
-            href="#home"
-            onclick="mobileScrollToId(event,'home')"
-            class="menu-item"
-            >Home</a
-          >
-          <a
-            href="#about"
-            onclick="mobileScrollToId(event,'about')"
-            class="menu-item"
-            >About</a
-          >
-          <a
-            href="#services"
-            onclick="mobileScrollToId(event,'services')"
-            class="menu-item"
-            >Services</a
-          >
-          <a href="#op" onclick="mobileScrollToId(event,'op')" class="menu-item"
-            >OP Schedule</a
-          >
-          <a
-            href="#contact"
-            onclick="mobileScrollToId(event,'contact')"
-            class="menu-item"
-            >Contact</a
-          >
-          <a
-            href="book-now.html"
-            class="menu-item bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded font-semibold mt-2 mb-4 text-center"
-          >
-            Make Appointment
-          </a>
-        </nav>
-      </div>
-    </header>
-
-    <a
-      href="./vcard.html"
-      class="w-min-content p-2 text-white font-bold bg-orange-500 hidden lg:block absolute right-0 top-[50%] z-[90] rounded"
-    >
-      Digi Card
-    </a>
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="max-w-7xl mx-auto grid lg:grid-cols-2 items-center gap-8 lg:gap-12 pt-8 pb-0 md:pt-16 md:pb-0 lg:pt-20 lg:pb-10 px-4 sm:px-6 lg:px-8 w-full overflow-hidden"
-    >
-      <!-- Left Content -->
-      <div class="space-y-6 lg:space-y-8">
-        <p
-          class="animate-element mt-12 lg:mt-0 text-xl sm:text-xl font-semibold text-gray-700 tracking-wide uppercase translate-y-[50px] opacity-0"
-        >
-          Dr. Abdu Salam OK
-        </p>
-
-        <h1
-          class="animate-element text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 translate-y-[50px] opacity-0"
-        >
-          The Importance of
-          <span class="text-orange-500 block sm:inline">Mental Health</span>
-          For a Better Life
-        </h1>
-
-        <p
-          class="animate-element text-base sm:text-lg text-gray-600 leading-relaxed max-w-lg translate-y-[50px] opacity-0"
-        >
-          Good mental health is the foundation of a fulfilling life. It shapes
-          how we think, feel, and connect with others, helping us handle stress,
-          build strong relationships, and make better choices every day.
-        </p>
-
-        <div
-          class="animate-element flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 translate-y-[50px] opacity-0"
-        >
-          <a
-            href="#contact"
-            class="w-full sm:w-auto bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-orange-600 transition-colors duration-300 text-center"
-          >
-            Contact
-          </a>
-        </div>
-
-        <div
-          class="animate-element flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 translate-y-[50px] opacity-0"
-        >
-          <!-- Small avatars -->
-          <!-- <div class="flex -space-x-2">
+      <div
+        class="animate-element flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 translate-y-[50px] opacity-0">
+        <!-- Small avatars -->
+        <!-- <div class="flex -space-x-2">
                   <img src="https://randomuser.me/api/portraits/women/68.jpg" 
                         class="w-10 h-10 rounded-full border-2 border-white shadow-md">
                   <img src="https://randomuser.me/api/portraits/men/45.jpg" 
@@ -227,144 +147,98 @@
                         class="w-10 h-10 rounded-full border-2 border-white shadow-md">
               </div> -->
 
-          <div class="text-sm text-gray-700">
-            <div class="flex items-center space-x-1 mb-1">
-              <span class="text-yellow-400">★★★★★</span>
+        <div class="text-sm text-gray-700">
+          <div class="flex items-center space-x-1 mb-1">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+          <div>
+            Over <span class="font-semibold text-orange-500">1K+</span> Happy
+            Customers
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="animate-hero-image order-first lg:order-last translate-y-[50px] opacity-0">
+      <div class="relative">
+        <img src="./images/profile.webp" alt="Therapy session with Dr. Andrew Smith" class="rounded-2xl shadow-xl" />
+
+        <!-- Floating card overlay -->
+        <div
+          class="absolute floating-animation -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-xs">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
             <div>
-              Over <span class="font-semibold text-orange-500">1K+</span> Happy
-              Customers
+              <p class="font-semibold text-gray-900 text-sm">Certified</p>
+              <p class="text-xs text-gray-500">Licensed Psychiatrist</p>
             </div>
           </div>
         </div>
+
+        <a href="./vcard.html"
+          class="w-min-content floating-animation-1 p-2 lg:hidden text-white font-bold bg-orange-500 class absolute -left-4 -bottom-14 z-[90] rounded">
+          Digi Card
+        </a>
       </div>
+    </div>
+  </section>
 
-      <!-- Right Image -->
-      <div
-        class="animate-hero-image order-first lg:order-last translate-y-[50px] opacity-0"
-      >
-        <div class="relative">
-          <img
-            src="./images/profile.webp"
-            alt="Therapy session with Dr. Andrew Smith"
-            class="rounded-2xl shadow-xl"
-          />
-
-          <!-- Floating card overlay -->
-          <div
-            class="absolute floating-animation -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-xs"
-          >
-            <div class="flex items-center space-x-3">
-              <div
-                class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center"
-              >
-                <svg
-                  class="w-6 h-6 text-orange-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p class="font-semibold text-gray-900 text-sm">Certified</p>
-                <p class="text-xs text-gray-500">Licensed Psychiatrist</p>
-              </div>
-            </div>
-          </div>
-
-          <a
-            href="./vcard.html"
-            class="w-min-content floating-animation-1 p-2 lg:hidden text-white font-bold bg-orange-500 class absolute -left-4 -bottom-14 z-[90] rounded"
-          >
-            Digi Card
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Awareness video section -->
-    <section id="awareness-video-section" class="w-full overflow-hidden">
-      <div
-        class="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-5 sm:gap-10 items-center py-14 px-4 sm:px-6 lg:px-8"
-      >
-        <div class="space-y-2 sm:space-y-4 order-last lg:order-first">
-          <p
-            class="text-sm uppercase tracking-widest font-semibold text-gray-500"
-          >
-            Watch
+  <!-- Awareness video section -->
+  <section id="awareness-video-section" class="w-full overflow-hidden">
+    <div
+      class="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-5 sm:gap-10 items-center py-14 px-4 sm:px-6 lg:px-8">
+      <div class="space-y-2 sm:space-y-4 order-last lg:order-first">
+        <p class="text-sm uppercase tracking-widest font-semibold text-gray-500">
+          Watch
+        </p>
+        <h2 class="sm:text-3xl font-bold leading-relaxed text-gray-900">
+          ഭാര്യയ്ക്ക് മൂഡ് സ്വിങ് വരുമ്പോൾ ഭർത്താക്കന്മാർ ചെയ്യേണ്ടത് ഇതാണ്!
+          <span id="pms-more-toggle"
+            class="sm:hidden inline-block text-blue-500 text-sm font-medium cursor-pointer align-middle">more...</span>
+        </h2>
+        <div id="pms-more-content" class="mobile-collapse space-y-2 sm:space-y-3">
+          <p class="text-sm sm:text-lg text-gray-700 leading-relaxed">
+            പ്രീമെൻസ്ട്രുവൽ സിംപ്റ്റംസ് (PMS) ഉള്ള ഭാര്യ ദേഷ്യപ്പെടുകയോ
+            കരയുകയോ ചെയ്താൽ നിങ്ങൾ എന്ത് ചെയ്യണം? ഒരു മിനിറ്റ് ദൈർഘ്യമുള്ള ഈ
+            വീഡിയോ എല്ലാ കുടുംബബന്ധങ്ങൾക്കും ഒരു പാഠമാണ്.
           </p>
-          <h2 class="sm:text-3xl font-bold leading-relaxed text-gray-900">
-            ഭാര്യയ്ക്ക് മൂഡ് സ്വിങ് വരുമ്പോൾ ഭർത്താക്കന്മാർ ചെയ്യേണ്ടത് ഇതാണ്!
-            <span
-              id="pms-more-toggle"
-              class="sm:hidden inline-block text-blue-500 text-sm font-medium cursor-pointer align-middle"
-              >more...</span
-            >
-          </h2>
-          <div
-            id="pms-more-content"
-            class="mobile-collapse space-y-2 sm:space-y-3"
-          >
-            <p class="text-sm sm:text-lg text-gray-700 leading-relaxed">
-              പ്രീമെൻസ്ട്രുവൽ സിംപ്റ്റംസ് (PMS) ഉള്ള ഭാര്യ ദേഷ്യപ്പെടുകയോ
-              കരയുകയോ ചെയ്താൽ നിങ്ങൾ എന്ത് ചെയ്യണം? ഒരു മിനിറ്റ് ദൈർഘ്യമുള്ള ഈ
-              വീഡിയോ എല്ലാ കുടുംബബന്ധങ്ങൾക്കും ഒരു പാഠമാണ്.
-            </p>
-            <ul
-              class="list-disc text-sm sm:text-lg pl-5 text-gray-700 space-y-1"
-            >
-              <li>അവരെ കേൾക്കുക</li>
-              <li>അവരുടെ വിഷമം അംഗീകരിക്കുക (Validate)</li>
-              <li>തിരിച്ച് പ്രതികരിക്കാതെ കൂടുതൽ കെയർ കൊടുക്കുക</li>
-            </ul>
-            <p class="text-sm sm:text-lg text-gray-700">
-              പരിഹാരം: നിർബന്ധമായും Psychiatrist നെ കാണണം.
-            </p>
-          </div>
+          <ul class="list-disc text-sm sm:text-lg pl-5 text-gray-700 space-y-1">
+            <li>അവരെ കേൾക്കുക</li>
+            <li>അവരുടെ വിഷമം അംഗീകരിക്കുക (Validate)</li>
+            <li>തിരിച്ച് പ്രതികരിക്കാതെ കൂടുതൽ കെയർ കൊടുക്കുക</li>
+          </ul>
+          <p class="text-sm sm:text-lg text-gray-700">
+            പരിഹാരം: നിർബന്ധമായും Psychiatrist നെ കാണണം.
+          </p>
         </div>
+      </div>
 
-        <div class="flex justify-center">
-          <div
-            class="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[520px]"
-          >
-            <div
-              class="rounded-2xl shadow-2xl bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 p-1"
-            >
-              <div
-                class="rounded-xl overflow-hidden bg-black relative h-[300px] sm:h-[500px]"
-              >
-                <button
-                  id="video-launcher"
-                  type="button"
-                  data-src="./images/vid1.mp4"
-                  class="video-thumb"
-                  aria-label="Play awareness video"
-                >
-                  <img
-                    src="./images/thumb.jpg"
-                    alt="Awareness video thumbnail"
-                    class="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  <span class="video-thumb-overlay"></span>
-                  <span class="video-thumb-play" aria-hidden="true"></span>
-                </button>
-              </div>
+      <div class="flex justify-center">
+        <div class="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[520px]">
+          <div class="rounded-2xl shadow-2xl bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 p-1">
+            <div class="rounded-xl overflow-hidden bg-black relative h-[300px] sm:h-[500px]">
+              <button id="video-launcher" type="button" data-src="./images/vid1.mp4" class="video-thumb"
+                aria-label="Play awareness video">
+                <img src="./images/thumb.jpg" alt="Awareness video thumbnail" class="w-full h-full object-cover"
+                  loading="lazy" />
+                <span class="video-thumb-overlay"></span>
+                <span class="video-thumb-play" aria-hidden="true"></span>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- booking section -->
-    <!-- 
+  <!-- booking section -->
+  <!-- 
     <section
       id="booking-section"
       class="fade-in text-white pb-14 sm:py-16 px-4 sm:px-6 lg:px-8 translate-y-[50px] opacity-0 w-full overflow-hidden"
@@ -470,191 +344,123 @@
     </section>
     -->
 
-    <!-- New Book Now CTA -->
-    <section class="fade-in py-16 px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="bg-gradient-to-r from-[#2b1d0f] to-[#3d2a16] rounded-3xl p-10 shadow-2xl border border-orange-500/20">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
-          <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
-            Choose a plan that fits your needs and book your consultation via WhatsApp today.
-          </p>
-          <a
-            href="book-now.html"
-            class="inline-block group relative h-14 overflow-hidden rounded-xl bg-orange-500 px-10 py-4 text-white font-bold text-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]"
-          >
-            <span class="relative z-10">Book Now</span>
-            <span class="absolute inset-0 overflow-hidden rounded-xl">
-              <span
-                class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"
-              ></span>
-            </span>
-          </a>
-        </div>
+  <!-- New Book Now CTA -->
+  <section class="fade-in py-16 px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="bg-gradient-to-r from-[#2b1d0f] to-[#3d2a16] rounded-3xl p-10 shadow-2xl border border-orange-500/20">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
+        <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+          Choose a plan that fits your needs and book your consultation via WhatsApp today.
+        </p>
+        <a href="book-now.html"
+          class="inline-block group relative h-14 overflow-hidden rounded-xl bg-orange-500 px-10 py-4 text-white font-bold text-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(249,115,22,0.4)]">
+          <span class="relative z-10">Book Now</span>
+          <span class="absolute inset-0 overflow-hidden rounded-xl">
+            <span
+              class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-orange-400 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+          </span>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- About Me section -->
-    <section id="about" class="w-full overflow-hidden">
-      <div class="p-8 md:p-16 lg:p-24 bg-white">
-        <div
-          class="flex flex-col lg:flex-row items-center justify-center gap-12"
-        >
-          <div
-            class="relative w-full lg:w-1/2 flex justify-center lg:justify-end"
-          >
-            <div class="relative w-full max-w-lg">
-              <div
-                class="scale-up scale-0 opacity-0 absolute -top-6 -left-6 w-32 h-32 bg-orange-200"
-              ></div>
-              <div
-                class="slide-left -translate-x-[100px] opacity-0 relative z-10 p-4 bg-white shadow-lg"
-              >
-                <img
-                  src="./images/hero_doctor.webp"
-                  alt="Group therapy session"
-                  class="w-full h-[350px] md:h-[450px] lg:h-[550px] object-cover rounded-lg object-[20%_35%]"
-                />
-              </div>
+  <!-- About Me section -->
+  <section id="about" class="w-full overflow-hidden">
+    <div class="p-8 md:p-16 lg:p-24 bg-white">
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
+        <div class="relative w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-lg">
+            <div class="scale-up scale-0 opacity-0 absolute -top-6 -left-6 w-32 h-32 bg-orange-200"></div>
+            <div class="slide-left -translate-x-[100px] opacity-0 relative z-10 p-4 bg-white shadow-lg">
+              <img src="./images/hero_doctor.webp" alt="Group therapy session"
+                class="w-full h-[350px] md:h-[450px] lg:h-[550px] object-cover rounded-lg object-[20%_35%]" />
             </div>
           </div>
+        </div>
 
-          <div
-            class="slide-left translate-x-[100px] opacity-0 w-full lg:w-1/2 md:text-center lg:text-left"
-          >
-            <h2
-              class="text-gray-500 text-sm md:text-base lg:text-lg uppercase tracking-wider font-semibold"
-            >
-              About Me
-            </h2>
-            <h3 class="text-4xl md:text-5xl lg:text-5xl font-bold mt-2">
-              We Help You Solve
-              <br />
-              <span class="text-orange-500">The Problems You Face</span>
-            </h3>
-            <h4 class="text-xl md:text-2xl font-semibold mt-4">
-              Dr. Abdu Salam OK
-            </h4>
-            <h5 class="text-gray-600 text-base md:text-lg">
-              Consultant Psychiatrist
-            </h5>
-            <i class="fas fa-phone mr-2 text-orange-400"></i>90374 89654
+        <div class="slide-left translate-x-[100px] opacity-0 w-full lg:w-1/2 md:text-center lg:text-left">
+          <h2 class="text-gray-500 text-sm md:text-base lg:text-lg uppercase tracking-wider font-semibold">
+            About Me
+          </h2>
+          <h3 class="text-4xl md:text-5xl lg:text-5xl font-bold mt-2">
+            We Help You Solve
+            <br />
+            <span class="text-orange-500">The Problems You Face</span>
+          </h3>
+          <h4 class="text-xl md:text-2xl font-semibold mt-4">
+            Dr. Abdu Salam OK
+          </h4>
+          <h5 class="text-gray-600 text-base md:text-lg">
+            Consultant Psychiatrist
+          </h5>
+          <i class="fas fa-phone mr-2 text-orange-400"></i>90374 89654
 
-            <p class="text-gray-600 mt-6 max-w-xl mx-auto lg:mx-0">
-              I am an accomplished Consultant Psychiatrist currently serving at
-              Almas Hospital, Kottakkal. After completing my MBBS from AIIMS,
-              Delhi, I pursued an MD in Psychiatry at NIMHANS, Bangalore,
-              followed by a DNB in Psychiatry. My professional journey includes
-              serving as a Junior Resident at NIMHANS for three years, followed
-              by a year as a Senior Resident at Manjeri Medical College. I also
-              gained valuable experience in the departments of Cardiology and
-              Laboratory Medicine at AIIMS, Delhi.<br />
+          <p class="text-gray-600 mt-6 max-w-xl mx-auto lg:mx-0">
+            I am an accomplished Consultant Psychiatrist currently serving at
+            Almas Hospital, Kottakkal. After completing my MBBS from AIIMS,
+            Delhi, I pursued an MD in Psychiatry at NIMHANS, Bangalore,
+            followed by a DNB in Psychiatry. My professional journey includes
+            serving as a Junior Resident at NIMHANS for three years, followed
+            by a year as a Senior Resident at Manjeri Medical College. I also
+            gained valuable experience in the departments of Cardiology and
+            Laboratory Medicine at AIIMS, Delhi.<br />
 
-              Fluent in Malayalam, Hindi, English, Kannada, and Tamil, I strive
-              to make mental healthcare accessible to people from diverse
-              backgrounds. I am a proud member of the Indian Psychiatric Society
-              (IPS) and the Indian Medical Association (IMA), committed to
-              upholding the highest standards of clinical excellence.
-            </p>
-            <div
-              class="stagger-item grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-2xl mx-auto lg:mx-0"
-            >
-              <div
-                class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700"
-              >
-                <svg
-                  class="w-5 h-5 text-green-500 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                Child and Adolescent Psychiatry
-              </div>
-              <div
-                class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700"
-              >
-                <svg
-                  class="w-5 h-5 text-green-500 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                Geriatric psychiatry
-              </div>
-              <div
-                class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700"
-              >
-                <svg
-                  class="w-5 h-5 text-green-500 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                Adult Psychiatry Services
-              </div>
-              <div
-                class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700"
-              >
-                <svg
-                  class="w-5 h-5 text-green-500 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                Addiction Psychiatry
-              </div>
-              <div
-                class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700"
-              >
-                <svg
-                  class="w-5 h-5 text-green-500 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                Marital Therapy
-              </div>
-              <div
-                class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700"
-              >
-                <svg
-                  class="w-5 h-5 text-green-500 mr-2"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                Perinatal Mental health and Psychiatric Rehabilitation
-              </div>
-              <!-- <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+            Fluent in Malayalam, Hindi, English, Kannada, and Tamil, I strive
+            to make mental healthcare accessible to people from diverse
+            backgrounds. I am a proud member of the Indian Psychiatric Society
+            (IPS) and the Indian Medical Association (IMA), committed to
+            upholding the highest standards of clinical excellence.
+          </p>
+          <div class="stagger-item grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-2xl mx-auto lg:mx-0">
+            <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Child and Adolescent Psychiatry
+            </div>
+            <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Geriatric psychiatry
+            </div>
+            <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Adult Psychiatry Services
+            </div>
+            <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Addiction Psychiatry
+            </div>
+            <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Marital Therapy
+            </div>
+            <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Perinatal Mental health and Psychiatric Rehabilitation
+            </div>
+            <!-- <div class="stagger-item translate-x-[50px] opacity-0 flex items-center text-gray-700">
                         <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
@@ -666,724 +472,530 @@
                         </svg>
                         Stress Management
                     </div> -->
-            </div>
+          </div>
 
-            <div class="flex mt-3 space-x-8 text-3xl">
-              <!-- Instagram -->
-              <a
-                href="https://www.instagram.com/listening_community"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="relative text-gray-500 hover:text-orange-500 transition-colors duration-300 group"
-              >
-                <i class="fab fa-instagram"></i>
-                <span
-                  class="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 group-hover:w-full transition-all duration-300"
-                ></span>
-              </a>
+          <div class="flex mt-3 space-x-8 text-3xl">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/listening_community" target="_blank" rel="noopener noreferrer"
+              class="relative text-gray-500 hover:text-orange-500 transition-colors duration-300 group">
+              <i class="fab fa-instagram"></i>
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-500 group-hover:w-full transition-all duration-300"></span>
+            </a>
 
-              <!-- WhatsApp -->
-              <a
-                href="https://wa.me/+918826752502"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="relative text-gray-500 hover:text-green-500 transition-colors duration-300 group"
-              >
-                <i class="fab fa-whatsapp"></i>
-                <span
-                  class="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-500 group-hover:w-full transition-all duration-300"
-                ></span>
-              </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+918826752502" target="_blank" rel="noopener noreferrer"
+              class="relative text-gray-500 hover:text-green-500 transition-colors duration-300 group">
+              <i class="fab fa-whatsapp"></i>
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-500 group-hover:w-full transition-all duration-300"></span>
+            </a>
 
-              <!-- LinkedIn -->
-              <a
-                href="https://www.linkedin.com/company/listening-community"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="relative text-gray-500 hover:text-blue-600 transition-colors duration-300 group"
-              >
-                <i class="fab fa-linkedin-in"></i>
-                <span
-                  class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 group-hover:w-full transition-all duration-300"
-                ></span>
-              </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/listening-community" target="_blank" rel="noopener noreferrer"
+              class="relative text-gray-500 hover:text-blue-600 transition-colors duration-300 group">
+              <i class="fab fa-linkedin-in"></i>
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 group-hover:w-full transition-all duration-300"></span>
+            </a>
 
-              <!-- facebook -->
-              <a
-                href="https://www.facebook.com/share/1BNijLoG25/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="relative text-gray-500 hover:text-blue-600 transition-colors duration-300 group"
-              >
-                <i class="fab fa-facebook-f"></i>
-                <span
-                  class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 group-hover:w-full transition-all duration-300"
-                ></span>
-              </a>
-            </div>
+            <!-- facebook -->
+            <a href="https://www.facebook.com/share/1BNijLoG25/" target="_blank" rel="noopener noreferrer"
+              class="relative text-gray-500 hover:text-blue-600 transition-colors duration-300 group">
+              <i class="fab fa-facebook-f"></i>
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 group-hover:w-full transition-all duration-300"></span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services section -->
-    <section id="services" class="w-full overflow-hidden">
-      <div class="timeline-section bg-white py-16 px-4 md:px-8 lg:px-16">
-        <!-- Header -->
-        <div class="max-w-4xl mx-auto text-center mb-12">
-          <h2
-            class="timeline-1 opacity-0 scale-0 text-gray-500 uppercase tracking-widest text-sm font-semibold"
-          >
-            Services
-          </h2>
-          <h3
-            class="timeline-2 opacity-0 scale-0 text-4xl md:text-5xl font-bold mt-2"
-          >
-            We Provide Best
-            <span class="text-orange-500">Healthcare Services</span>
-          </h3>
-          <p
-            class="timeline-3 opacity-0 scale-0 text-gray-600 mt-4 max-w-2xl mx-auto"
-          >
-            Compassionate, effective therapy services to empower your mental
-            well-being.
-          </p>
-        </div>
+  <!-- Services section -->
+  <section id="services" class="w-full overflow-hidden">
+    <div class="timeline-section bg-white py-16 px-4 md:px-8 lg:px-16">
+      <!-- Header -->
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="timeline-1 opacity-0 scale-0 text-gray-500 uppercase tracking-widest text-sm font-semibold">
+          Services
+        </h2>
+        <h3 class="timeline-2 opacity-0 scale-0 text-4xl md:text-5xl font-bold mt-2">
+          We Provide Best
+          <span class="text-orange-500">Healthcare Services</span>
+        </h3>
+        <p class="timeline-3 opacity-0 scale-0 text-gray-600 mt-4 max-w-2xl mx-auto">
+          Compassionate, effective therapy services to empower your mental
+          well-being.
+        </p>
+      </div>
 
-        <!-- Services Grid -->
+      <!-- Services Grid -->
+      <div class="tile-parent max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1: Couple Counseling -->
         <div
-          class="tile-parent max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <!-- Card 1: Couple Counseling -->
-          <div
-            class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
-          >
-            <img
-              src="./images/tile-1.webp"
-              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"
-            ></div>
-            <div class="absolute inset-0 flex flex-col justify-end p-6">
-              <h4
-                class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]"
-              >
-                Couple Counseling
-              </h4>
-              <p
-                class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-              >
-                Personalized sessions to improve communication and strengthen
-                relationships.
-              </p>
-            </div>
+          class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20">
+          <img src="./images/tile-1.png"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <h4
+              class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]">
+              Couple Counseling
+            </h4>
+            <p
+              class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+              Personalized sessions to improve communication and strengthen
+              relationships.
+            </p>
           </div>
+        </div>
 
-          <!-- Card 2: Depression Counseling -->
-          <div
-            class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
-          >
-            <img
-              src="./images/tile-2.webp"
-              alt="Depression Counseling"
-              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"
-            ></div>
-            <div class="absolute inset-0 flex flex-col justify-end p-6">
-              <h4
-                class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]"
-              >
-                Depression Counseling
-              </h4>
-              <p
-                class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-              >
-                Evidence-based therapy to manage and overcome depression
-                effectively. Our experienced counselors provide personalized
-                treatment plans.
-              </p>
-            </div>
+        <!-- Card 2: Depression Counseling -->
+        <div
+          class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20">
+          <img src="./images/tile-2.png" alt="Depression Counseling"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <h4
+              class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]">
+              Depression Counseling
+            </h4>
+            <p
+              class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+              Evidence-based therapy to manage and overcome depression
+              effectively. Our experienced counselors provide personalized
+              treatment plans.
+            </p>
           </div>
+        </div>
 
-          <!-- Card 3: Individual Therapy (Tall card) -->
-          <div
-            class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer md:row-span-2 h-80 md:h-[42rem] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
-          >
-            <img
-              src="./images/tile-3.webp"
-              alt="Individual Therapy"
-              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"
-            ></div>
-            <div class="absolute inset-0 flex flex-col justify-end p-6">
-              <h4
-                class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]"
-              >
-                Individual Therapy
-              </h4>
-              <p
-                class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-              >
-                One-on-one sessions tailored to personal growth and healing.
-              </p>
-            </div>
+        <!-- Card 3: Individual Therapy (Tall card) -->
+        <div
+          class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer md:row-span-2 h-80 md:h-[42rem] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20">
+          <img src="./images/tile-3.png" alt="Individual Therapy"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <h4
+              class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]">
+              Individual Therapy
+            </h4>
+            <p
+              class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+              One-on-one sessions tailored to personal growth and healing.
+            </p>
           </div>
+        </div>
 
-          <!-- Card 4: Therapy Session -->
-          <div
-            class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
-          >
-            <img
-              src="./images/tile-4.webp"
-              alt="Therapy Session"
-              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"
-            ></div>
-            <div class="absolute inset-0 flex flex-col justify-end p-6">
-              <h4
-                class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]"
-              >
-                Therapy Session
-              </h4>
-              <p
-                class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-              >
-                Engaging and interactive group therapy sessions for various
-                needs.
-              </p>
-            </div>
+        <!-- Card 4: Therapy Session -->
+        <div
+          class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20">
+          <img src="./images/tile-4.png" alt="Therapy Session"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <h4
+              class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]">
+              Therapy Session
+            </h4>
+            <p
+              class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+              Engaging and interactive group therapy sessions for various
+              needs.
+            </p>
           </div>
+        </div>
 
-          <!-- Card 5: Psychiatric Care -->
-          <div
-            class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
-          >
-            <img
-              src="./images/tile-5.webp"
-              alt="Psychiatric Care"
-              class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-            <div
-              class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"
-            ></div>
-            <div class="absolute inset-0 flex flex-col justify-end p-6">
-              <h4
-                class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]"
-              >
-                Psychiatric Care
-              </h4>
-              <p
-                class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100"
-              >
-                Professional psychiatric evaluation and treatment plans for
-                mental health conditions.
-              </p>
-            </div>
+        <!-- Card 5: Psychiatric Care -->
+        <div
+          class="tile-group relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20">
+          <img src="./images/tile-5.png" alt="Psychiatric Care"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+          <div class="absolute inset-0 bg-black/30 transition duration-500 ease-out group-hover:bg-black/50"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-6">
+            <h4
+              class="text-white text-2xl font-bold leading-tight transition duration-500 ease-out group-hover:translate-y-[-10px]">
+              Psychiatric Care
+            </h4>
+            <p
+              class="mt-2 text-sm text-white opacity-0 translate-y-3 transition duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
+              Professional psychiatric evaluation and treatment plans for
+              mental health conditions.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- op section -->
-    <section id="op" class="w-full overflow-hidden">
-      <div class="max-w-[96rem] mt-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Page Header -->
-        <div class="timeline-section-1 text-center mb-12">
-          <!-- <div class="inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-full mb-4 shadow-lg">
+  <!-- op section -->
+  <section id="op" class="w-full overflow-hidden">
+    <div class="max-w-[96rem] mt-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Page Header -->
+      <div class="timeline-section-1 text-center mb-12">
+        <!-- <div class="inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-full mb-4 shadow-lg">
           <i class="fas fa-hospital text-white text-2xl"></i>
         </div> -->
-          <h2
-            class="timeline-1-1 opacity-0 scale-0 text-4xl font-extrabold text-orange-500 mb-2"
-          >
-            OP Schedule & Contacts
-          </h2>
-          <p
-            class="timeline-1-2 opacity-0 scale-0 text-gray-600 mt-2 max-w-2xl mx-auto"
-          >
-            Visit our partner hospitals at the scheduled times. We provide
-            dedicated outpatient services to ensure you receive the best care.
+        <h2 class="timeline-1-1 opacity-0 scale-0 text-4xl font-extrabold text-orange-500 mb-2">
+          OP Schedule & Contacts
+        </h2>
+        <p class="timeline-1-2 opacity-0 scale-0 text-gray-600 mt-2 max-w-2xl mx-auto">
+          Visit our partner hospitals at the scheduled times. We provide
+          dedicated outpatient services to ensure you receive the best care.
+        </p>
+      </div>
+
+      <!-- Hospital Cards Grid -->
+      <div
+        class="tile-parent-op grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 mb-10">
+        <!-- ALMAS Hospital Card -->
+        <div class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">ALMAS</h3>
+              <p class="text-gray-500 flex items-center text-sm mt-1">
+                <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
+                Kottakkal
+              </p>
+            </div>
+            <i class="fas fa-hospital text-orange-500 text-2xl"></i>
+          </div>
+
+          <div class="mb-3 bg-gray-50 rounded-xl p-4">
+            <p class="text-gray-800 font-medium">Monday - Saturday</p>
+            <p class="text-orange-600 font-bold text-xl mt-1">
+              9:00 AM - 1:00 PM
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="space-y-2">
+              <a href="tel:04832809100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>0483 2809100
+              </a>
+              <a href="tel:04833509100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>0483 3509100
+              </a>
+            </div>
+          </div>
+
+          <button data-link="https://maps.app.goo.gl/ZnJSk2R4E4fQKPqE8" onclick="openLocation(this.dataset.link)"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md">
+            <i class="fas fa-map-marked-alt mr-2"></i>View Location
+          </button>
+        </div>
+
+        <div class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">MBH</h3>
+              <p class="text-gray-500 flex items-center text-sm mt-1">
+                <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
+                Malappuram
+              </p>
+            </div>
+            <i class="fas fa-hospital text-orange-500 text-2xl"></i>
+          </div>
+
+          <div class="mb-3 bg-gray-50 rounded-xl p-4">
+            <p class="text-gray-800 font-medium">
+              Tuesday, Thursday, Saturday
+            </p>
+            <p class="text-orange-600 font-bold text-xl mt-1">
+              4:00 PM - 5:00 PM
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="space-y-2">
+              <a href="tel:04832809100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>9526903838
+              </a>
+              <a href="tel:04833509100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>9605188700
+              </a>
+            </div>
+          </div>
+
+          <button data-link="https://maps.app.goo.gl/B6CpcmuaRVjm8Snn7" onclick="openLocation(this.dataset.link)"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md">
+            <i class="fas fa-map-marked-alt mr-2"></i>View Location
+          </button>
+        </div>
+
+        <div class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">MIMHAR</h3>
+              <p class="text-gray-500 flex items-center text-sm mt-1">
+                <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
+                Malappuram
+              </p>
+            </div>
+            <i class="fas fa-hospital text-orange-500 text-2xl"></i>
+          </div>
+
+          <div class="mb-3 bg-gray-50 rounded-xl p-4">
+            <p class="text-gray-800 font-medium">
+              Tuesday, Thursday, Saturday
+            </p>
+            <p class="text-orange-600 font-bold text-xl mt-1">
+              3:00 PM - 4:00 PM
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="space-y-2">
+              <a href="tel:04832809100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>6235000037
+              </a>
+              <a href="tel:04833509100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>8943545475
+              </a>
+            </div>
+          </div>
+
+          <button data-link="https://maps.app.goo.gl/eacfS16mLo5UqnMD6" onclick="openLocation(this.dataset.link)"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md">
+            <i class="fas fa-map-marked-alt mr-2"></i>View Location
+          </button>
+        </div>
+
+        <div class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">Nizar Hospital</h3>
+              <p class="text-gray-500 flex items-center text-sm mt-1">
+                <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
+                Valanchery
+              </p>
+            </div>
+            <i class="fas fa-hospital text-orange-500 text-2xl"></i>
+          </div>
+
+          <div class="mb-3 bg-gray-50 rounded-xl p-4">
+            <p class="text-gray-800 font-medium">Monday, Wednesday</p>
+            <p class="text-orange-600 font-bold text-xl mt-1">
+              2:30 PM - 5:30 PM
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="space-y-2">
+              <a href="tel:04832809100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>0494 3102000,
+                8714639181
+              </a>
+              <a href="tel:04833509100"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>8714639101,
+                8714639102
+              </a>
+            </div>
+          </div>
+
+          <button data-link="https://maps.app.goo.gl/FNmGDSKdqaWbD1s67" onclick="openLocation(this.dataset.link)"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md">
+            <i class="fas fa-map-marked-alt mr-2"></i>View Location
+          </button>
+        </div>
+        <div class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant">
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900">
+                Manas Psychiatric Clinic
+              </h3>
+              <p class="text-gray-500 flex items-center text-sm mt-1">
+                <i class="fas fa-globe text-orange-400 mr-2"></i>
+                Online
+              </p>
+            </div>
+            <i class="fas fa-hospital  text-orange-500 text-2xl"></i>
+          </div>
+
+          <div class="mb-3 bg-gray-50 rounded-xl p-4">
+            <p class="text-gray-800 font-medium">Tuesday to Sunday</p>
+            <p class="text-orange-600 font-semibold text-sm mt-1">
+              Sessions available online (by appointment)
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <div class="space-y-2">
+              <a href="tel:+919037489654"
+                class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                <i class="fas fa-phone mr-2 text-orange-400"></i>+91 90374 89654
+              </a>
+            </div>
+          </div>
+          <button data-link="#booking-section" onclick="openLocation(this.dataset.link)"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md">
+            <i class="fas fa-globe mr-2"></i>Go to Booking
+          </button>
+        </div>
+
+        <!-- Add more hospital cards here following the same elegant pattern -->
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-neutral-800 text-gray-400 py-8 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="md:hidden md:text-center">
+          <div class="flex items-center md:justify-center mb-4 md:mb-8">
+            <!-- <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div> -->
+            <h2 class="text-xl font-bold text-white">Dr. Abdu Salam OK</h2>
+          </div>
+          <p class="text-gray-500 mb-4 md:mb-10 leading-relaxed max-w-sm md:mx-auto text-sm">
+            An accomplished consultant psychiatrist is serving Almas Hospital
+            Kottakkal. He completed his MBBS degree from AIIMS, Delhi, and
+            then attained an MD PSYCHIATRY qualification from NIMHANS,
+            Bangalore.
           </p>
+
+          <!-- Contact Information -->
+          <div class="space-y-3">
+            <div class="flex items-center md:justify-center text-gray-500 text-sm">
+              <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>koottilangadi, Malappuram, kerala 676506</span>
+            </div>
+            <div class="flex items-center md:justify-center text-gray-500 text-sm">
+              <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span>90374 89654</span>
+            </div>
+            <div class="flex items-center md:justify-center text-gray-500 text-sm">
+              <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <span>abdusalamok@gmail.com</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Hospital Cards Grid -->
-        <div
-          class="tile-parent-op grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 mb-10"
-        >
-          <!-- ALMAS Hospital Card -->
-          <div
-            class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant"
-          >
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">ALMAS</h3>
-                <p class="text-gray-500 flex items-center text-sm mt-1">
-                  <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
-                  Kottakkal
-                </p>
-              </div>
-              <i class="fas fa-hospital text-orange-500 text-2xl"></i>
-            </div>
-
-            <div class="mb-3 bg-gray-50 rounded-xl p-4">
-              <p class="text-gray-800 font-medium">Monday - Saturday</p>
-              <p class="text-orange-600 font-bold text-xl mt-1">
-                9:00 AM - 1:00 PM
-              </p>
-            </div>
-
-            <div class="mb-4">
-              <div class="space-y-2">
-                <a
-                  href="tel:04832809100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>0483 2809100
-                </a>
-                <a
-                  href="tel:04833509100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>0483 3509100
-                </a>
-              </div>
-            </div>
-
-            <button
-              data-link="https://maps.app.goo.gl/ZnJSk2R4E4fQKPqE8"
-              onclick="openLocation(this.dataset.link)"
-              class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md"
-            >
-              <i class="fas fa-map-marked-alt mr-2"></i>View Location
-            </button>
-          </div>
-
-          <div
-            class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant"
-          >
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">MBH</h3>
-                <p class="text-gray-500 flex items-center text-sm mt-1">
-                  <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
-                  Malappuram
-                </p>
-              </div>
-              <i class="fas fa-hospital text-orange-500 text-2xl"></i>
-            </div>
-
-            <div class="mb-3 bg-gray-50 rounded-xl p-4">
-              <p class="text-gray-800 font-medium">
-                Tuesday, Thursday, Saturday
-              </p>
-              <p class="text-orange-600 font-bold text-xl mt-1">
-                4:00 PM - 5:00 PM
-              </p>
-            </div>
-
-            <div class="mb-4">
-              <div class="space-y-2">
-                <a
-                  href="tel:04832809100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>9526903838
-                </a>
-                <a
-                  href="tel:04833509100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>9605188700
-                </a>
-              </div>
-            </div>
-
-            <button
-              data-link="https://maps.app.goo.gl/B6CpcmuaRVjm8Snn7"
-              onclick="openLocation(this.dataset.link)"
-              class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md"
-            >
-              <i class="fas fa-map-marked-alt mr-2"></i>View Location
-            </button>
-          </div>
-
-          <div
-            class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant"
-          >
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">MIMHAR</h3>
-                <p class="text-gray-500 flex items-center text-sm mt-1">
-                  <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
-                  Malappuram
-                </p>
-              </div>
-              <i class="fas fa-hospital text-orange-500 text-2xl"></i>
-            </div>
-
-            <div class="mb-3 bg-gray-50 rounded-xl p-4">
-              <p class="text-gray-800 font-medium">
-                Tuesday, Thursday, Saturday
-              </p>
-              <p class="text-orange-600 font-bold text-xl mt-1">
-                3:00 PM - 4:00 PM
-              </p>
-            </div>
-
-            <div class="mb-4">
-              <div class="space-y-2">
-                <a
-                  href="tel:04832809100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>6235000037
-                </a>
-                <a
-                  href="tel:04833509100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>8943545475
-                </a>
-              </div>
-            </div>
-
-            <button
-              data-link="https://maps.app.goo.gl/eacfS16mLo5UqnMD6"
-              onclick="openLocation(this.dataset.link)"
-              class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md"
-            >
-              <i class="fas fa-map-marked-alt mr-2"></i>View Location
-            </button>
-          </div>
-
-          <div
-            class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant"
-          >
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">Nizar Hospital</h3>
-                <p class="text-gray-500 flex items-center text-sm mt-1">
-                  <i class="fas fa-map-marker-alt text-orange-400 mr-2"></i>
-                  Valanchery
-                </p>
-              </div>
-              <i class="fas fa-hospital text-orange-500 text-2xl"></i>
-            </div>
-
-            <div class="mb-3 bg-gray-50 rounded-xl p-4">
-              <p class="text-gray-800 font-medium">Monday, Wednesday</p>
-              <p class="text-orange-600 font-bold text-xl mt-1">
-                2:30 PM - 5:30 PM
-              </p>
-            </div>
-
-            <div class="mb-4">
-              <div class="space-y-2">
-                <a
-                  href="tel:04832809100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>0494 3102000,
-                  8714639181
-                </a>
-                <a
-                  href="tel:04833509100"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>8714639101,
-                  8714639102
-                </a>
-              </div>
-            </div>
-
-            <button
-              data-link="https://maps.app.goo.gl/FNmGDSKdqaWbD1s67"
-              onclick="openLocation(this.dataset.link)"
-              class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md"
-              >
-                <i class="fas fa-map-marked-alt mr-2"></i>View Location
-              </button>
-            </div>
-          <div
-            class="tile-group-op bg-white rounded-2xl shadow-xl p-5 border-t-4 border-orange-500 card-elegant"
-          >
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">
-                  Manas Psychiatric Clinic
-                </h3>
-                <p class="text-gray-500 flex items-center text-sm mt-1">
-                  <i class="fas fa-globe text-orange-400 mr-2"></i>
-                  Online
-                </p>
-              </div>
-              <i class="fas fa-hospital  text-orange-500 text-2xl"></i>
-            </div>
-
-            <div class="mb-3 bg-gray-50 rounded-xl p-4">
-              <p class="text-gray-800 font-medium">Tuesday to Sunday</p>
-              <p class="text-orange-600 font-semibold text-sm mt-1">
-                Sessions available online (by appointment)
-              </p>
-            </div>
-
-            <div class="mb-4">
-              <div class="space-y-2">
-                <a
-                  href="tel:+919037489654"
-                  class="phone-link flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                >
-                  <i class="fas fa-phone mr-2 text-orange-400"></i>+91 90374 89654
-                </a>
-              </div>
-            </div>
-            <button
-              data-link="#booking-section"
-              onclick="openLocation(this.dataset.link)"
-              class="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-lg transition-colors duration-200 font-semibold shadow-md"
-              >
-                <i class="fas fa-globe mr-2"></i>Go to Booking
-              </button>
-          </div>
-
-          <!-- Add more hospital cards here following the same elegant pattern -->
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-white text-xl font-medium mb-4 md:mb-8">
+            Quick Links
+          </h3>
+          <ul class="space-y-2 md:space-y-4">
+            <li>
+              <a href="#" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">About</a>
+            </li>
+            <li>
+              <a href="#services"
+                class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Services</a>
+            </li>
+            <li>
+              <a href="#op" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">OP schedule</a>
+            </li>
+            <li>
+              <a href="book-now.html"
+                class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Booking</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
 
-    <footer id="contact" class="bg-neutral-800 text-gray-400 py-8 md:py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div class="md:hidden md:text-center">
-            <div class="flex items-center md:justify-center mb-4 md:mb-8">
-              <!-- <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
+        <!-- Center Logo and Description -->
+        <div class="hidden md:inline md:text-center">
+          <div class="flex items-center md:justify-center mb-8">
+            <!-- <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
                             </svg>
                         </div> -->
-              <h2 class="text-xl font-bold text-white">Dr. Abdu Salam OK</h2>
-            </div>
-            <p
-              class="text-gray-500 mb-4 md:mb-10 leading-relaxed max-w-sm md:mx-auto text-sm"
-            >
-              An accomplished consultant psychiatrist is serving Almas Hospital
-              Kottakkal. He completed his MBBS degree from AIIMS, Delhi, and
-              then attained an MD PSYCHIATRY qualification from NIMHANS,
-              Bangalore.
-            </p>
-
-            <!-- Contact Information -->
-            <div class="space-y-3">
-              <div
-                class="flex items-center md:justify-center text-gray-500 text-sm"
-              >
-                <svg
-                  class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>koottilangadi, Malappuram, kerala 676506</span>
-              </div>
-              <div
-                class="flex items-center md:justify-center text-gray-500 text-sm"
-              >
-                <svg
-                  class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  />
-                </svg>
-                <span>90374 89654</span>
-              </div>
-              <div
-                class="flex items-center md:justify-center text-gray-500 text-sm"
-              >
-                <svg
-                  class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                  />
-                  <path
-                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                  />
-                </svg>
-                <span>abdusalamok@gmail.com</span>
-              </div>
-            </div>
+            <h2 class="text-xl font-bold text-white">Dr. Abdu Salam OK</h2>
           </div>
+          <p class="text-gray-500 mb-10 leading-relaxed max-w-sm md:mx-auto text-sm">
+            An accomplished consultant psychiatrist is serving Almas Hospital
+            Kottakkal. He completed his MBBS degree from AIIMS, Delhi, and
+            then attained an MD PSYCHIATRY qualification from NIMHANS,
+            Bangalore.
+          </p>
 
-          <!-- Quick Links -->
-          <div>
-            <h3 class="text-white text-xl font-medium mb-4 md:mb-8">
-              Quick Links
-            </h3>
-            <ul class="space-y-2 md:space-y-4">
-              <li>
-                <a
-                  href="#"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#services"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#op"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >OP schedule</a
-                >
-              </li>
-              <li>
-                <a
-                  href="book-now.html"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Booking</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Center Logo and Description -->
-          <div class="hidden md:inline md:text-center">
-            <div class="flex items-center md:justify-center mb-8">
-              <!-- <div class="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center mr-3">
-                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
-                            </svg>
-                        </div> -->
-              <h2 class="text-xl font-bold text-white">Dr. Abdu Salam OK</h2>
+          <!-- Contact Information -->
+          <div class="space-y-3">
+            <div class="flex items-center md:justify-center text-gray-500 text-sm">
+              <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>koottilangadi, Malappuram, kerala 676506</span>
             </div>
-            <p
-              class="text-gray-500 mb-10 leading-relaxed max-w-sm md:mx-auto text-sm"
-            >
-              An accomplished consultant psychiatrist is serving Almas Hospital
-              Kottakkal. He completed his MBBS degree from AIIMS, Delhi, and
-              then attained an MD PSYCHIATRY qualification from NIMHANS,
-              Bangalore.
-            </p>
-
-            <!-- Contact Information -->
-            <div class="space-y-3">
-              <div
-                class="flex items-center md:justify-center text-gray-500 text-sm"
-              >
-                <svg
-                  class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span>koottilangadi, Malappuram, kerala 676506</span>
-              </div>
-              <div
-                class="flex items-center md:justify-center text-gray-500 text-sm"
-              >
-                <svg
-                  class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                  />
-                </svg>
-                <span>90374 89654</span>
-              </div>
-              <div
-                class="flex items-center md:justify-center text-gray-500 text-sm"
-              >
-                <svg
-                  class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
-                  />
-                  <path
-                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
-                  />
-                </svg>
-                <span>abdusalamok@gmail.com</span>
-              </div>
+            <div class="flex items-center md:justify-center text-gray-500 text-sm">
+              <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span>90374 89654</span>
             </div>
-          </div>
-
-          <!-- Other Pages -->
-          <div class="md:text-right">
-            <h3 class="text-white text-xl font-medium mb-4 md:mb-8">
-              Other Pages
-            </h3>
-            <ul class="space-y-4">
-              <li>
-                <a
-                  href="./termsAndCondition.html"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Terms & Conditions</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./vcard.html"
-                  class="text-gray-500 hover:text-orange-400 transition-colors duration-300"
-                  >Digi Card</a
-                >
-              </li>
-            </ul>
+            <div class="flex items-center md:justify-center text-gray-500 text-sm">
+              <svg class="w-4 h-4 text-orange-400 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <span>abdusalamok@gmail.com</span>
+            </div>
           </div>
         </div>
 
-        <!-- Bottom Footer -->
-        <div class="border-t border-gray-700 mt-12 md:mt-16 pt-6">
-          <div
-            class="flex flex-col md:flex-row justify-center items-center text-gray-600 text-xs"
-          >
-            <p class="mt-2 md:mt-0">Copyright © 2025. All rights reserved.</p>
-          </div>
+        <!-- Other Pages -->
+        <div class="md:text-right">
+          <h3 class="text-white text-xl font-medium mb-4 md:mb-8">
+            Other Pages
+          </h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="./termsAndCondition.html"
+                class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="./vcard.html" class="text-gray-500 hover:text-orange-400 transition-colors duration-300">Digi
+                Card</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <!-- Bottom Footer -->
+      <div class="border-t border-gray-700 mt-12 md:mt-16 pt-6">
+        <div class="flex flex-col md:flex-row justify-center items-center text-gray-600 text-xs">
+          <p class="mt-2 md:mt-0">Copyright © 2025. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Your custom JS -->
-    <script src="script.js"></script>
-  </body>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
+</body>
+
 </html>
